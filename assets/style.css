@@ -48,8 +48,13 @@ body.dark-mode .navbar a {
     padding: 10px 20px;
     font-size: 18px;
 }
-
-
+.support a{
+    text-decoration: none !important;
+    list-style: none;
+}
+.mail{
+    text-transform:lowercase !important;
+}
 
 
 @media screen and (max-width:500px) {
@@ -75,6 +80,9 @@ body.dark-mode .navbar a {
     .darkbut {
         position: relative;
         right: 15px !important;
+    }
+    .insta, .face{
+        display: none;
     }
 
 }
