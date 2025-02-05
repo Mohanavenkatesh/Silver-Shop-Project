@@ -1,25 +1,27 @@
-.fab{
+.fab {
     width: 80px;
-    height:80px;
-    
+    height: 80px;
+
     color: rgb(255, 255, 255);
     border: 2px solid transparent;
-    cursor:pointer;
+    cursor: pointer;
     opacity: 0.5;
     border-radius: 50%;
     /* background: url(../img/arrow.png); */
     background-color: black;
     background-position: center;
     background-size: contain;
-    position:fixed;
-    z-index:1;
-    transform:translatey(2px);
+    position: fixed;
+    z-index: 1;
+    transform: translatey(2px);
     transition: 1s;
     top: 75%;
     left: 89%;
     display: flex;
     flex-wrap: wrap;
 }
+
+
 /* Default light mode styles */
 body {
     background-color: white;
@@ -28,43 +30,49 @@ body {
 }
 
 /* Dark mode styles */
-.dark-mode {
+body.dark-mode {
     background-color: #121212;
     color: white;
 }
 
+/* Adjust Navbar in Dark Mode */
+body.dark-mode .navbar {
+    background-color: #222 !important;
+}
 
-/* Style the button */
-button {
+body.dark-mode .navbar a {
+    color: white !important;
+}
+
+.btn {
     padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-    border: none;
-    border-radius: 5px;
-    background-color: #000;
-    color: white;
+    font-size: 18px;
 }
 
 
 
 
-@media screen and (max-width:500px){
-    .fab{
+@media screen and (max-width:500px) {
+    .fab {
         width: 60px;
-        height:60px;
+        height: 60px;
         /* background: url(../img/arrow.png); */
         background-color: black;
         opacity: 0.5;
-        cursor:pointer;
+        cursor: pointer;
         border-radius: 50%;
         background-position: center;
         background-size: contain;
-        position:fixed;
+        position: fixed;
         top: 85%;
         left: 75%;
         display: flex;
         flex-wrap: wrap;
         z-index: 1;
+    }
+    .darkbut{
+        position: relative;
+        right: 15px !important;
     }
 
 }
