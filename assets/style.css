@@ -112,7 +112,16 @@ body.dark-mode .navbar a {
 
     background-color: white;
     color: black;
+    cursor: pointer;
 
 
 
+}
+.navbarr{
+    position: sticky !important;
+    width: 100% !important;
+    top: 0 !important;
+    z-index: 10 !important;
+    backdrop-filter: blur(30px);
+    /* box-shadow: 0px 0px 10px ; */
 }
