@@ -21,9 +21,9 @@
 <body>
 
     <!--  Top info -->
-    <div class="container align-content-center">
+    <!-- <div class="container-fluid">
 
-        <div class=" d-flex social justify-content-lg-end justify-content-sm-evenly">
+        <div class=" d-flex social justify-content-lg-start justify-content-sm-evenly">
             <div class="float-start m-2">
                 <a href="mailto:abcd@gmail.com" class="text-decoration-none"><i
                         class="footer_icons rounded-circle border border-black fa-regular fa-envelope fw-bold ms-3 mb-3 me-1 mt-2 p-1"></i>abcdef@gmail.com</a>
@@ -42,13 +42,13 @@
 
 
         </div>
-    </div>
+    </div> -->
 
     <!-- Nabar & Darkmode -->
     <nav class="navbar navbar-expand-lg py-2 border-black border navbarr " aria-label="Thirteenth navbar example">
         <div class="container-fluid  ">
 
-            <a href="./index.html" class="text-decoration-none text-black ms-5">Logo</a>
+            <a href="./index.html" class="text-decoration-none text-black ms-5">SilverTex</a>
 
             <button class="navbar-toggler border-white" type="button" data-bs-toggle="collapse"
                 data-bs-toggle="collapse" data-bs-target="#navbarsExample11" aria-controls="navbarsExample11"
@@ -60,7 +60,7 @@
                 <a class="navbar-brand col-lg me-0" href="#">
                     <a href="./index.html"><img class="d-none" src="./assets/img/logo.png" alt=""></a>
                 </a>
-                <ul class="navbar-nav col-lg align-items-center justify-content-lg-center navbarr">
+                <ul class="navbar-nav col-lg align-items-center justify-content-lg-end navbarr">
                     <li class="nav-item">
                     <li><a href="./index.html" class="nav-link px-2 text-dark ">Home</a></li>
                     </li>
@@ -80,7 +80,7 @@
                 <div class="d-flex justify-content-center">
 
                     <div class="togglebut">
-                        <button type="submit" class="btn btn-dark" id="theme-toggle">SWITCH</button>
+                        <button type="submit" class="btn btn-dark" id="theme-toggle">Theme</button>
                     </div>
 
                 </div>
@@ -89,135 +89,160 @@
     </nav>
 
     <!-- Carousel -->
-    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+    <!-- <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
             <div class="carousel-item active bg"
-                style="background: url(./assets/img/Property\ 1=Frame\ 26.png); width: 100%; height: 650px;"
+                style="background: url(./assets/img/Slide\ 16_9\ -\ 1.png); width: 100%; height: 650px;"
                 data-bs-interval="1500"></div>
             <div class="carousel-item bg1"
-                style="background:  url(./assets/img/Property\ 1=Frame\ 27.png); width: 100%; height: 650px;"
+                style="background:  url(./assets/img/Slide\ 16_9\ -\ 12.png); width: 100%; height: 650px;"
                 data-bs-interval="1500"></div>
             <div class="carousel-item bg2"
-                style="background: url(./assets/img/Property\ 1=Frame\ 26.png); width: 100%; height: 650px;"
+                style="background: url(./assets/img/Slide\ 16_9\ -\ 1.png); width: 100%; height: 650px;"
                 data-bs-interval="1500"></div>
             <div class="carousel-item bg3"
-                style="background: url(./assets/img/Property\ 1=Frame\ 27.png); width: 100%; height: 650px;"
+                style="background: url(./assets/img/Slide\ 16_9\ -\ 12.png); width: 100%; height: 650px;"
                 data-bs-interval="1000"></div>
         </div>
+    </div> -->
+
+
+   <!-- Hero Section Carousel -->
+<div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-label="Slide 1" aria-current="true"></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
     </div>
-
-    <!-- Trending Products -->
-    <div class="container-fluid p-0">
-        <h1 class="text-center my-3">Trending Products</h1>
-        <div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel">
-            <div class="carousel-indicators">
-                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="bg-dark"
-                    aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"
-                    class="active bg-dark" aria-current="true"></button>
-                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"
-                    class="bg-dark"></button>
-            </div>
-
-            <div class="carousel-inner">
-                <div class="carousel-item ">
-                    <svg class="bd-placeholder-img" width="100%" height="500px" xmlns="http://www.w3.org/2000/svg"
-                        aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
-                        <rect width="100%" height="100%" fill="white"></rect>
-                    </svg>
-                    <div class="container">
-                        <div class="carousel-caption d-flex flex-wrap ">
-                            <div>
-                                <img class="p-5 p-md-1" src="./assets/img/men/Men Product (1).avif"
-                                    alt="" width="200px">
-                                <h1 class="text-dark">One more for good measure.</h1>
-                                <p class="text-dark"> Some representative placeholder content for the third slide of
-                                    this carousel.</p>
-                                <p class="text-dark"><a class="btn  btn-dark" href="#">Browse gallery</a></p>
-                            </div>
-
-                            <div>
-                                <img class="p-5 p-md-1" src="./assets/img/men/Men Product (2).avif"
-                                    alt=" " width="200px">
-                                <h1 class="text-dark">One more for good measure.</h1>
-                                <p class="text-dark">Some representative placeholder content for the third slide of this
-                                    carousel.</p>
-                                <p class="text-dark"><a class="btn btn-dark" href="#">Browse gallery</a></p>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item active">
-                    <svg class="bd-placeholder-img" width="100%" height="500px" xmlns="http://www.w3.org/2000/svg"
-                        aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
-                        <rect width="100%" height="100%" fill="white"></rect>
-                    </svg>
-                    <div class="container">
-                        <div class="carousel-caption d-flex flex-wrap ">
-
-                            <div>
-                                <img class="p-5 p-md-1" src="./assets/img/men/Men Product (3).avif"
-                                    alt="" width="200px">
-                                <h1 class="text-dark">One more for good measure.</h1>
-                                <p class="text-dark"> Some representative placeholder content for the third slide of
-                                    this carousel.</p>
-                                <p class="text-dark"><a class="btn  btn-dark" href="#">Browse gallery</a></p>
-                            </div>
-
-                            <div>
-                                <img class="p-5 p-md-1" src="./assets/img/men/Men Product (4).avif"
-                                    alt=" " width="200px">
-                                <h1 class="text-dark">One more for good measure.</h1>
-                                <p class="text-dark">Some representative placeholder content for the third slide of this
-                                    carousel.</p>
-                                <p class="text-dark"><a class="btn btn-dark" href="#">Browse gallery</a></p>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <svg class="bd-placeholder-img" width="100%" height="500px" xmlns="http://www.w3.org/2000/svg"
-                        aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
-                        <rect width="100%" height="100%" fill="white"></rect>
-                    </svg>
-                    <div class="container">
-                        <div class="carousel-caption d-flex flex-wrap ">
-
-                            <div>
-                                <img class="p-5 p-md-1" src="./assets/img/men/Men Product (5).avif"
-                                    alt="" width="200px">
-                                <h1 class="text-dark">One more for good measure.</h1>
-                                <p class="text-dark"> Some representative placeholder content for the third slide of
-                                    this carousel.</p>
-                                <p class="text-dark"><a class="btn  btn-dark" href="#">Browse gallery</a></p>
-                            </div>
-
-                            <div>
-                                <img class="p-5 p-md-1" src="./assets/img/men/Men Product (6).avif"
-                                    alt=" " width="200px">
-                                <h1 class="text-dark">One more for good measure.</h1>
-                                <p class="text-dark">Some representative placeholder content for the third slide of this
-                                    carousel.</p>
-                                <p class="text-dark"><a class="btn  btn-dark" href="#">Browse gallery</a></p>
-                            </div>
-
-                        </div>
-                    </div>
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="./assets/img/kids_hero.png" alt="" width="100%" height="700px">
+            <div class="container-fluid">
+                <div class="carousel-caption text-start">
+                    <h1>Example headline.</h1>
+                    <p class="opacity-75">Some representative placeholder content for the first slide of the carousel.</p>
+                    <p><a class="btn btn-lg btn-primary" href="#">Sign up today</a></p>
                 </div>
             </div>
-
-            <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
+        </div>
+        <div class="carousel-item">
+            <img src="./assets/img/men_hero.png" alt="" width="100%" height="700px">
+            <div class="container-fluid">
+                <div class="carousel-caption text-start">
+                    <h1>Another example headline.</h1>
+                    <p>Some representative placeholder content for the second slide of the carousel.</p>
+                    <p><a class="btn btn-lg btn-primary" href="#">Learn more</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="./assets/img/women_hero.png" alt="" width="100%" height="700px">
+            <div class="container-fluid">
+                <div class="carousel-caption text-start">
+                    <h1>One more for good measure.</h1>
+                    <p>Some representative placeholder content for the third slide of this carousel.</p>
+                    <p><a class="btn btn-lg btn-primary" href="#">Browse gallery</a></p>
+                </div>
+            </div>
         </div>
     </div>
+</div>
+
+<!-- Trending Products Section -->
+<div class="container-fluid p-0">
+    <h1 class="text-center my-3">Trending Products</h1>
+    <div id="trendingCarousel" class="carousel slide mb-6" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#trendingCarousel" data-bs-slide-to="0" class="active bg-dark" aria-label="Slide 1" aria-current="true"></button>
+            <button type="button" data-bs-target="#trendingCarousel" data-bs-slide-to="1" class="bg-dark" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#trendingCarousel" data-bs-slide-to="2" class="bg-dark" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <svg class="bd-placeholder-img" width="100%" height="500px" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+                    <rect width="100%" height="100%" fill="white"></rect>
+                </svg>
+                <div class="container">
+                    <div class="carousel-caption d-flex flex-wrap justify-content-center justify-content-evenly">
+                        <div>
+                            <img class="p-5 p-md-1" src="./assets/img/men/Men Product (1).avif" alt="" width="200px">
+                            <h1 class="text-dark">Product 1</h1>
+                            <p class="text-dark">Description for product 1.</p>
+                            <p class="text-dark"><a class="btn btn-dark" href="#">Browse gallery</a></p>
+                        </div>
+                        <div>
+                            <img class="p-5 p-md-1" src="./assets/img/men/Men Product (2).avif" alt=" " width="200px">
+                            <h1 class="text-dark">Product 2</h1>
+                            <p class="text-dark">Description for product 2.</p>
+                            <p class="text-dark"><a class="btn btn-dark" href="#">Browse gallery</a></p>
+                        </div>
+                        <div>
+                            <img class="p-5 p-md-1" src="./assets/img/men/Men Product (6).avif" alt=" " width="200px">
+                            <h1 class="text-dark">Product 6</h1>
+                            <p class="text-dark">Description for product 6.</p>
+                            <p class="text-dark"><a class="btn btn-dark" href="#">Browse gallery</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <svg class="bd-placeholder-img" width="100%" height="500px" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+                    <rect width="100%" height="100%" fill="white"></rect>
+                </svg>
+                <div class="container">
+                    <div class="carousel-caption d-flex flex-wrap justify-content-center justify-content-evenly">
+                        <div>
+                            <img class="p-5 p-md-1" src="./assets/img/men/Men Product (3).avif" alt="" width="200px">
+                            <h1 class="text-dark">Product 3</h1>
+                            <p class="text-dark">Description for product 3.</p>
+                            <p class="text-dark"><a class="btn btn-dark" href="#">Browse gallery</a></p>
+                        </div>
+                        <div>
+                            <img class="p-5 p-md-1" src="./assets/img/men/Men Product (4).avif" alt=" " width="200px">
+                            <h1 class="text-dark">Product 4</h1>
+                            <p class="text-dark">Description for product 4.</p>
+                            <p class="text-dark"><a class="btn btn-dark" href="#">Browse gallery</a></p>
+                        </div>
+                        <div>
+                            <img class="p-5 p-md-1" src="./assets/img/men/Men Product (6).avif" alt=" " width="200px">
+                            <h1 class="text-dark">Product 6</h1>
+                            <p class="text-dark">Description for product 6.</p>
+                            <p class="text-dark"><a class="btn btn-dark" href="#">Browse gallery</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <svg class="bd-placeholder-img" width="100%" height="500px" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+                    <rect width="100%" height="100%" fill="white"></rect>
+                </svg>
+                <div class="container">
+                    <div class="carousel-caption d-flex flex-wrap justify-content-center justify-content-between">
+                        <div>
+                            <img class="p-5 p-md-1" src="./assets/img/men/Men Product (5).avif" alt="" width="200px">
+                            <h1 class="text-dark">Product 5</h1>
+                            <p class="text-dark">Description for product 5.</p>
+                            <p class="text-dark"><a class="btn btn-dark" href="#">Browse gallery</a></p>
+                        </div>
+                        <div>
+                            <img class="p-5 p-md-1" src="./assets/img/men/Men Product (6).avif" alt=" " width="200px">
+                            <h1 class="text-dark">Product 6</h1>
+                            <p class="text-dark">Description for product 6.</p>
+                            <p class="text-dark"><a class="btn btn-dark" href="#">Browse gallery</a></p>
+                        </div>
+                        <div>
+                            <img class="p-5 p-md-1" src="./assets/img/men/Men Product (6).avif" alt=" " width="200px">
+                            <h1 class="text-dark">Product 6</h1>
+                            <p class="text-dark">Description for product 6.</p>
+                            <p class="text-dark"><a class="btn btn-dark" href="#">Browse gallery</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
 
     <!-- Fab -->
     <a href="#" class="fab">
