@@ -102,15 +102,19 @@ body.dark-mode .navbar a {
     width: 10px;
 }
 
-img {
-    height: fit-content;
-    width: 120px;
-}
+
 
 .hight {
-    height: 400px;
+    height: 500px;
 }
 
+@media screen and (max-width:500px) {
+    .hight {
+        height: 800px;
+    }
+    
+
+}
 
 /* Footer Icons  By Mohan*/
 
