@@ -1,24 +1,10 @@
-.fab {
-    width: 50px;
-    height: 50px;
-
-    color: rgb(255, 255, 255);
-    border: 2px solid transparent;
-    cursor: pointer;
-    opacity: 0.5;
-    border-radius: 50%;
-    /* background: url(../img/arrow.png); */
-    background-color: black;
-    background-position: center;
-    background-size: contain;
-    position: fixed;
-    z-index: 1;
-    transform: translatey(2px);
-    transition: 1s;
-    top: 90%;
-    left: 95%;
-    display: flex;
-    flex-wrap: wrap;
+.navbarr {
+    position: sticky !important;
+    width: 100% !important;
+    top: 0 !important;
+    z-index: 10 !important;
+    backdrop-filter: blur(30px);
+    /* box-shadow: 0px 0px 10px ; */
 }
 
 /* checking of navbar hamburger lines */
@@ -64,12 +50,14 @@ body.dark-mode .navbar a {
     padding: 10px 20px;
     font-size: 18px;
 }
-.support a{
+
+.support a {
     text-decoration: none !important;
     list-style: none;
 }
-.mail{
-    text-transform:lowercase !important;
+
+.mail {
+    text-transform: lowercase !important;
 }
 
 
@@ -97,12 +85,31 @@ body.dark-mode .navbar a {
         position: relative;
         right: 15px !important;
     }
-    .insta, .face{
+
+    .insta,
+    .face {
         display: none;
     }
 
 }
 
+/* Trending Products */
+
+
+.carousel_btn {
+
+    border-radius: 100%;
+    width: 10px;
+}
+
+img {
+    height: fit-content;
+    width: 120px;
+}
+
+.hight {
+    height: 400px;
+}
 
 
 /* Footer Icons  By Mohan*/
@@ -117,11 +124,27 @@ body.dark-mode .navbar a {
 
 
 }
-.navbarr{
-    position: sticky !important;
-    width: 100% !important;
-    top: 0 !important;
-    z-index: 10 !important;
-    backdrop-filter: blur(30px);
-    /* box-shadow: 0px 0px 10px ; */
+
+
+.fab {
+    width: 50px;
+    height: 50px;
+
+    color: rgb(255, 255, 255);
+    border: 2px solid transparent;
+    cursor: pointer;
+    opacity: 0.5;
+    border-radius: 50%;
+    /* background: url(../img/arrow.png); */
+    background-color: black;
+    background-position: center;
+    background-size: contain;
+    position: fixed;
+    z-index: 1;
+    transform: translatey(2px);
+    transition: 1s;
+    top: 90%;
+    left: 95%;
+    display: flex;
+    flex-wrap: wrap;
 }
