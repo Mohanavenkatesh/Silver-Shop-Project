@@ -93,28 +93,10 @@ body.dark-mode .navbar a {
 
 }
 
-/* Trending Products */
-
-
-.carousel_btn {
-
-    border-radius: 100%;
-    width: 10px;
-}
 
 
 
-.hight {
-    height: 500px;
-}
 
-@media screen and (max-width:500px) {
-    .hight {
-        height: 800px;
-    }
-    
-
-}
 
 /* Footer Icons  By Mohan*/
 
