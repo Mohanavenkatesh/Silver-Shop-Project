@@ -23,30 +23,27 @@
 
 // second
 
-const toggleButton = document.getElementById("theme-toggle");
-const body = document.body;
-const links = document.querySelectorAll("a");
+//----------------------------------- Dark Mode ---------------------------------------------------
 
-if (localStorage.getItem("theme") === "dark") {
-    applyDarkMode();
-}
+document.addEventListener("DOMContentLoaded", function () {
+    const themeToggle = document.getElementById("themeToggle");
+    const body = document.body;
 
-toggleButton.addEventListener("click", () => {
-    body.classList.toggle("dark-mode");
-
-    if (body.classList.contains("dark-mode")) {
-        localStorage.setItem("theme", "dark");
-        applyDarkMode();
-    } else {
-        localStorage.setItem("theme", "light");
-        removeDarkMode();
+    // Check if dark mode was previously enabled
+    if (localStorage.getItem("theme") === "dark") {
+        body.classList.add("dark-theme");
     }
+
+    themeToggle.addEventListener("click", function () {
+        body.classList.toggle("dark-theme");
+
+        // Save theme preference
+        if (body.classList.contains("dark-theme")) {
+            localStorage.setItem("theme", "dark");
+        } else {
+            localStorage.setItem("theme", "light");
+        }
+    });
 });
 
-function applyDarkMode() {
-    links.forEach(link => link.style.color = "white");
-}
-
-function removeDarkMode() {
-    links.forEach(link => link.style.color = "black");
-}
+//----------------------------------- Dark Mode End ---------------------------------------------------

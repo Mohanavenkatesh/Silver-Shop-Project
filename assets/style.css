@@ -8,10 +8,6 @@
 }
 
 
-
-
-@import url('https://fonts.googleapis.com/css2?family=Bokor&family=Lexend+Giga:wght@100..900&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
-
 * {
     /* font-family: "Poppins", serif; */
     /* font-family: "Oswald", serif !important; */
@@ -25,52 +21,43 @@ body {
 
 }
 
-/* Default navbar-toggler-icon */
-.navbar-toggler-icon {
-    background-image: url("data:image/svg+xml;charset=UTF8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba(0, 0, 0, 0.5)' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
-}
-
-/* Change navbar-toggler-icon for dark mode */
-body.dark-mode .navbar-toggler-icon {
-    background-image: url("data:image/svg+xml;charset=UTF8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba(255, 255, 255, 0.7)' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
-}
 
 
-/* Default light mode styles */
+
+
+/* Default Light Theme */
 body {
-    background-color: white;
-    color: black;
-    transition: 0.3s;
+    background-color: #ffffff;
+    color: #000000;
 }
 
-/* Dark mode styles */
-body.dark-mode {
+.theme {
+    color: #000000;
+}
+
+
+/* Dark Theme */
+.dark-theme {
     background-color: #121212;
-    color: white;
+    color: #ffffff;
 }
 
-/* Adjust Navbar in Dark Mode */
-body.dark-mode .navbar {
-    background-color: #222 !important;
+.dark-theme .theme {
+    color: #fff;
 }
 
-body.dark-mode .navbar a {
-    color: white !important;
-}
 
-.btn {
-    padding: 10px 20px;
-    font-size: 18px;
-}
 
-.support a {
-    text-decoration: none !important;
-    list-style: none;
-}
 
-.mail {
-    text-transform: lowercase !important;
-}
+
+
+
+
+
+
+
+
+
 
 
 @media screen and (max-width:500px) {
