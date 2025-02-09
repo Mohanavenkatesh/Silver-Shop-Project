@@ -28,22 +28,22 @@ document.addEventListener("DOMContentLoaded", function () {
 // Navbar Scrol
 
 
-document.addEventListener("DOMContentLoaded", () => {
+// document.addEventListener("DOMContentLoaded", () => {
 
-    const navbar = document.getElementById("navbar");
+//     const navbar = document.getElementById("navbar");
 
-    if (!navbar) return; // Prevent errors if navbar is missing
+//     if (!navbar) return; // Prevent errors if navbar is missing
 
-    window.addEventListener("scroll", () => {
+//     window.addEventListener("scroll", () => {
 
-        if (window.scrollY > 50) {
+//         if (window.scrollY > 50) {
 
-            navbar.classList.add("bg-white");
+//             navbar.classList.add("bg-white");
 
-        } else {
+//         } else {
 
-            navbar.classList.remove("bg-white");
+//             navbar.classList.remove("bg-white");
 
-        }
-    });
-});
+//         }
+//     });
+// });

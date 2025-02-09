@@ -37,20 +37,18 @@ body {
 
 
 
-/* Navebar */
+/*---------------------------------------------- Navebar---------------------------------------------- */
 
 .nav_styling {
-    position: fixed;
+    
     top: 0;
     width: 100%;
-    transition: background-color 0.3s ease, box-shadow 0.3s ease;
-    z-index: 1000;
-    background-color: transparent;
-    backdrop-filter: blur(30px);
+ 
+   
 }
 
 
-
+/*---------------------------------------------- Navebar End ------------------------------------------ */
 
 @media screen and (max-width:500px) {
     .fab {
@@ -84,14 +82,16 @@ body {
 
 }
 
-/* hero seciton  */
+/*--------------------------------------------- hero seciton  ------------------------------------------ */
 
 .hero_section_contents {
 
-    margin-bottom: 190px;
+    position: relative;
+    left: 100px;
+bottom: 300px;
 
 }
-
+/*--------------------------------------------- hero seciton end ------------------------------------------ */
 .footer_icons:hover {
 
     background-color: white;
