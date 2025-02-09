@@ -1,31 +1,17 @@
-.navbarr {
+/* .navbarr {
     position: sticky !important;
     width: 100% !important;
     top: 0 !important;
     z-index: 10 !important;
     backdrop-filter: blur(30px);
-    /* box-shadow: 0px 0px 10px ; */
-}
-
-
-* {
-    /* font-family: "Poppins", serif; */
-    /* font-family: "Oswald", serif !important; */
-    font-family: "Lexend Giga", serif;
-}
-
-/* checking of navbar hamburger lines */
-/* Ensure smooth background transition */
-body {
-    transition: 0.3s;
-
-}
+} */
 
 
 
 
+/*--------------------------------------------  Dark Theme ------------------------------------------- */
 
-/* Default Light Theme */
+/* Light Theme */
 body {
     background-color: #ffffff;
     color: #000000;
@@ -47,15 +33,21 @@ body {
 }
 
 
+/*--------------------------------------------  Dark Theme ------------------------------------------- */
 
 
 
+/* Navebar */
 
-
-
-
-
-
+.nav_styling {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    z-index: 1000;
+    background-color: transparent;
+    backdrop-filter: blur(30px);
+}
 
 
 
@@ -92,7 +84,13 @@ body {
 
 }
 
+/* hero seciton  */
 
+.hero_section_contents {
+
+    margin-bottom: 190px;
+
+}
 
 .footer_icons:hover {
 

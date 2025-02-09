@@ -1,27 +1,3 @@
-// const toggleButton = document.getElementById("theme-toggle");
-// const body = document.body;
-
-// // Check for saved theme in localStorage
-// if (localStorage.getItem("theme") === "dark") {
-//     body.classList.add("dark-mode");
-//     toggleButton.textContent = "Light";
-// }
-
-// // Toggle theme on button click
-// toggleButton.addEventListener("click", () => {
-//     body.classList.toggle("dark-mode");
-
-//     // Save preference in localStorage
-//     if (body.classList.contains("dark-mode")) {
-//         localStorage.setItem("theme", "dark");
-//         toggleButton.textContent = "Light";
-//     } else {
-//         localStorage.setItem("theme", "light");
-//         toggleButton.textContent = "Dark";
-//     }
-// });
-
-// second
 
 //----------------------------------- Dark Mode ---------------------------------------------------
 
@@ -47,3 +23,27 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 //----------------------------------- Dark Mode End ---------------------------------------------------
+
+
+// Navbar Scrol
+
+
+document.addEventListener("DOMContentLoaded", () => {
+
+    const navbar = document.getElementById("navbar");
+
+    if (!navbar) return; // Prevent errors if navbar is missing
+
+    window.addEventListener("scroll", () => {
+
+        if (window.scrollY > 50) {
+
+            navbar.classList.add("bg-white");
+
+        } else {
+
+            navbar.classList.remove("bg-white");
+
+        }
+    });
+});
