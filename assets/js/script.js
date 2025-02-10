@@ -50,3 +50,16 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 //  check
+const gridViewBtn = document.getElementById('grid-view-btn');
+const listViewBtn = document.getElementById('list-view-btn');
+const productContainer = document.getElementById('product-container');
+
+gridViewBtn.addEventListener('click', () => {
+  productContainer.classList.remove('list-view');
+  productContainer.classList.add('grid-view');
+});
+
+listViewBtn.addEventListener('click', () => {
+  productContainer.classList.remove('grid-view');
+  productContainer.classList.add('list-view');
+});
