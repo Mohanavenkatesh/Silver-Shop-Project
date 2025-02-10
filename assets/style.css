@@ -1,10 +1,10 @@
-/* .navbarr {
-    position: sticky !important;
-    width: 100% !important;
-    top: 0 !important;
+.navbarrrr{
+    position:sticky !important;
+    top: 0%;
+    width: 100%;
     z-index: 10 !important;
-    backdrop-filter: blur(30px);
-} */
+
+}
 
 *{
     /* font-family: "Lexend Giga", serif; */
