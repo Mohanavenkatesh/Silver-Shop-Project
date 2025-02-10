@@ -6,7 +6,7 @@
     backdrop-filter: blur(30px);
 } */
 
-*{
+* {
     /* font-family: "Lexend Giga", serif; */
     font-family: "Bebas Neue", serif;
 
@@ -85,21 +85,15 @@ body {
         display: none;
     }
 
-    .hero_section_img {
-
-
-        height: 400px;
-        width: 100%;
-
+    .rouded_css {
+        border-radius: 40px;
     }
 
 }
 
 /*--------------------------------------------- hero seciton  ------------------------------------------ */
 
-.hero_section_contents {
-
-}
+.hero_section_contents {}
 
 
 

@@ -13,17 +13,6 @@
 
 
     <!-- link for font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Bokor&family=Lexend+Giga:wght@100..900&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
-        rel="stylesheet">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bokor&family=Lexend+Giga:wght@100..900&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
-        rel="stylesheet">
 
 
     <!-- Font Awesome Link Tag -->
@@ -105,20 +94,23 @@
 
 
     <!-- Hero Section Carousel -->
-    <div class="container px-0 py-md-5">
+    <div class="container px-0 py-md-5 ">
         <div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel">
             <div class="carousel-indicators">
                 <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active rounded"
                     aria-label="Slide 1" aria-current="true"></button>
-                <button class="active rounded" type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                <button class="active rounded" type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button class="active rounded" type="button" data-bs-target="#myCarousel" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button class="active rounded" type="button" data-bs-target="#myCarousel" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
             </div>
             <div class="carousel-inner">
                 <div class="carousel-item active">
                     <!-- Large Screen -->
-                    <img src="./assets/img/kids.png" alt="" width="100%" class="hero_section_img d-none d-sm-flex rounded">
+                    <img src="./assets/img/kids.png" alt="" width="100%"
+                        class="hero_section_img d-none d-sm-flex rounded shadow ">
                     <!-- Mobile Screen -->
-                    <img src="./assets/img/kids-media.png" alt="" class="d-md-none" width="100%" >
+                    <img src="./assets/img/kids-media.png" alt="" class="d-md-none shadow p-3 rouded_css" width="100%">
                     <div class="container hero_section_contents">
                         <div class="carousel-caption ">
                             <h1 class="">Example headline.</h1>
@@ -126,32 +118,34 @@
                                 the
                                 carousel.</p>
 
-                            <p><a class="btn  btn-light " href="#">Sign up today</a>
+                            <p><a class="btn  btn-light " href="#">Shop Kidswear</a>
                             </p>
-                        </div> 
+                        </div>
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img src="./assets/img/men.png" alt="" width="100%" class="hero_section_img d-none d-sm-flex rounded">
-                    <img src="./assets/img/men-media.png" alt="" class="d-md-none " width="100%">
+                    <img src="./assets/img/men.png" alt="" width="100%"
+                        class="hero_section_img d-none d-sm-flex rounded shadow">
+                    <img src="./assets/img/men-media.png" alt="" class="d-md-none shadow p-3 rouded_css" width="100%">
                     <div class="container hero_section_contents">
                         <div class="carousel-caption ">
                             <h1 class="">Another example headline.</h1>
                             <p class="">Some representative placeholder content for the second slide of the
                                 carousel.</p>
-                            <p><a class="btn  btn-light" href="#">Learn more</a></p>
+                            <p><a class="btn  btn-light" href="#">Shop Men’s</a></p>
                         </div>
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img src="./assets/img/women.png" alt="" width="100%" class="hero_section_img d-none d-sm-flex rounded">
-                    <img src="./assets/img/women_media.png" alt="" class="d-md-none" width="100%">
+                    <img src="./assets/img/women.png" alt="" width="100%"
+                        class="hero_section_img d-none d-sm-flex rounded shadow">
+                    <img src="./assets/img/women_media.png" alt="" class="d-md-none shadow p-3 rouded_css" width="100%">
                     <div class="container hero_section_contents">
                         <div class="carousel-caption ">
                             <h1 class="">One more for good measure.</h1>
                             <p class="">Some representative placeholder content for the third slide of this
                                 carousel.</p>
-                            <p><a class="btn  btn-light" href="#">Browse gallery</a>
+                            <p><a class="btn  btn-light" href="#">Shop Women’s</a>
                             </p>
                         </div>
                     </div>
@@ -168,75 +162,35 @@
         <h2 class="pb-2 border-bottom">Custom cards</h2>
 
         <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5 ">
-            <div class="col">
-                <div class="card card-cover h-100 overflow-hidden  shadow-lg theme p-5">
-                    <img src="https://picsum.photos/200/300" alt="">
-                    <div class="d-flex flex-column h-100 p-5 pb-3  text-shadow-1 theme">
-                        <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold theme">Short title, long jacket</h3>
-                        <ul class="d-flex list-unstyled mt-auto">
-                          
-                            <li class="d-flex align-items-center me-3 theme">
-                                <svg class="bi me-2" width="1em" height="1em">
-                                    <use xlink:href="#geo-fill"></use>
-                                </svg>
-                                <small>Earth</small>
-                            </li>
-                            <li class="d-flex align-items-center">
-                                <svg class="bi me-2" width="1em" height="1em">
-                                    <use xlink:href="#calendar3"></use>
-                                </svg>
-                                <small>3d</small>
-                            </li>
-                        </ul>
+            <div class="col p-md-5">
+                <div class="card card-cover  overflow-hidden rounded-4  shadow-lg theme ">
+                    <img src="./assets/img/Kids_Card_.jpg.jpg" alt="">
+                    <div class="d-flex flex-column  p-4 text-shadow-1 theme">
+                        <h3 class="fw-bold theme">Short title, long jacket</h3>
+                        <p>Soft, playful, and designed for comfort. Find the perfect outfit for your little ones.</p>
+                        <button class="btn btn-primary">Shop Kidswear</button>
                     </div>
                 </div>
             </div>
 
-            <div class="col">
+            <div class="col  p-md-5">
                 <div class="card card-cover h-100 overflow-hidden  rounded-4 shadow-lg theme">
-                    <img src="./assets/img/Men_Card_.jpg" alt="">
-                    <div class="d-flex flex-column h-100 p-5 pb-3  text-shadow-1 theme">
-                        <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold theme">Much longer title that wraps to multiple lines
-                        </h3>
-                        <ul class="d-flex list-unstyled mt-auto">
-                            
-                            <li class="d-flex align-items-center me-3 theme">
-                                <svg class="bi me-2" width="1em" height="1em">
-                                    <use xlink:href="#geo-fill"></use>
-                                </svg>
-                                <small>Pakistan</small>
-                            </li>
-                            <li class="d-flex align-items-center theme">
-                                <svg class="bi me-2" width="1em" height="1em">
-                                    <use xlink:href="#calendar3"></use>
-                                </svg>
-                                <small>4d</small>
-                            </li>
-                        </ul>
+                    <img src="./assets/img/Men_Card_.jpg.jpg" alt="">
+                    <div class="d-flex flex-column  p-4 text-shadow-1 theme">
+                        <h3 class="fw-bold theme">Short title, long jacket</h3>
+                        <p>Minimalist designs, premium fabrics. Upgrade your wardrobe with timeless pieces.</p>
+                        <button class="btn btn-primary">Shop Men’s</button>
                     </div>
                 </div>
             </div>
 
-            <div class="col">
+            <div class="col p-md-5">
                 <div class="card card-cover h-100 overflow-hidden  rounded-4 shadow-lg theme">
                     <img src="./assets/img/Women_Card_.jpg" alt="">
-                    <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1 theme">
-                        <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Another longer title belongs here</h3>
-                        <ul class="d-flex list-unstyled mt-auto">
-                          
-                            <li class="d-flex align-items-center me-3 theme">
-                                <svg class="bi me-2" width="1em" height="1em">
-                                    <use xlink:href="#geo-fill"></use>
-                                </svg>
-                                <small>California</small>
-                            </li>
-                            <li class="d-flex align-items-center theme">
-                                <svg class="bi me-2" width="1em" height="1em">
-                                    <use xlink:href="#calendar3"></use>
-                                </svg>
-                                <small>5d</small>
-                            </li>
-                        </ul>
+                    <div class="d-flex flex-column  p-4 text-shadow-1 theme">
+                        <h3 class="fw-bold theme">Short title, long jacket</h3>
+                        <p>Elegant, trendy, and versatile. Find styles that make you feel confident.</p>
+                        <button class="btn btn-primary">Shop Women’s</button>
                     </div>
                 </div>
             </div>
