@@ -63,6 +63,15 @@ body {
         border-radius: 40px;
     }
 
+    .carousel-control-one {
+       display: none;
+    }
+    
+    
+    .carousel-control-two {
+        display: none;
+    }
+
 }
 
 /*--------------------------------------------- hero seciton  ------------------------------------------ */
