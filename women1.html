@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Liter&family=Montserrat:ital,wght@0,100..900;1,100..900&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <style>
+         *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.header{
+    width: 100%;
+    height:500px;
+   
+}
+.content{
+    position: absolute;
+    top: 40%;
+    left: 10%;
+
+}
+.content1{
+    position: absolute;
+    display: block;
+    justify-content: center;
+    transform: translate(75%, -500%);
+    font-family: "Quicksand";
+    font-size: 20px;
+    color:black !important;
+    text-decoration:none;
+    text-transform: none;
+ }
+  .img{
+    width: 50px;
+    height: 20px;
+  }
+  .add{
+    margin-left: 200px;
+  }
+  .line{
+    margin-bottom: 100px;
+  }
+  .drop{
+    list-style: none;
+  }
+  .dropdown .btn{
+    border-radius: 50px;
+    border-color: gray;
+    padding: 10px 20px;
+    margin-left: 50px;
+    margin-top: 15px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+  .icon{
+    background-color:rgb(0, 80, 86);
+    padding: 8px 12px;
+    border-radius: 20px;
+    margin-left: 20px;
+  }
+  .contents{
+    font-size: 18px;
+    margin-top: 40px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+  .span1{
+    color: blue;
+  }
+  .toggle{
+    width: 30px;
+    height: 30px;
+    margin-top: 70px;
+    margin-left: 100px;
+  }
+  .grid{
+    width: 35px;
+    height: 35px;
+    margin-left: 50px;
+    margin-top:70px ;
+   background-color:rgb(0, 80, 86);
+    padding: 5px 5px;
+    border-radius: 1px;
+  }
+    .image1{
+    width: 250px;
+    height: 250px;
+  }
+  .product-style7 {
+    display: flex;
+    align-items: stretch;
+    border: 1px solid gray;
+    border-radius: 30px;
+    position: relative;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 600px;
+}
+.product-style7 .product-img {
+    flex: 0 0 auto;
+    display: flex;
+    align-items: center;
+    border: 1px solid grey;
+    border-radius: 30px;
+    overflow: hidden;
+    margin: -1px;
+}
+.product-style7 .product-content {
+    padding: 20px 60px 20px 40px;
+    flex: 1;
+    align-self: center;
+}
+.product-style7 .star-rating {
+    margin-bottom: 15px;
+}
+.star-rating {
+    overflow: hidden;
+    position: relative;
+    width: 93px;
+    height: 1.2em;
+    line-height: 1.2em;
+    display: block;
+    font-family: var(--icon-font);
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.product-style7 .product-title a{
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+  margin: -0.14em 0 10px 0;
+}
+.product-style7 .product-title a:hover{
+  color: green;
+}
+.product-style7 .product-price {
+    font-size: 16px;
+    font-weight: 700;
+    
+}
+.product-style7 .product-price del {
+    font-size: 18px;
+    color: var(--text-color);
+    padding-left: 5px;
+    margin-top: 60px;
+}
+.product-style7 .cart-btn {
+    position: absolute;
+    bottom: 10px;
+    right: 30px;
+    --icon-size: 47px;
+    min-width: var(--icon-size);
+    min-height: var(--icon-size);
+    background-color: green;
+    width: var(--icon-size);
+    height: var(--icon-size);
+    color: var(--title-color);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    text-decoration: none;
+    padding: 0;
+    box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.1);
+}
+    </style>
+    <div class="container">
+        <div class="row">
+          <div class="col-lg-3 m-5">
+            <h2 class="contents">Showing items <span class="span1">1-12 </span>in <span class="span1">1000</span> results</h2>
+          </div>
+          <div class="col-lg-2"></div>
+          <div class=" col-lg-3">
+            <div class="dropdown mt-5">
+              <button class="btn"  id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                Recently Added<span><i class="icon fa-solid fa-caret-down"></i></span>
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <li><a class="dropdown-item" href="#">Sort By popularity</a></li>
+                <li><a class="dropdown-item" href="#">Sort By rating</a></li>
+                <li><a class="dropdown-item" href="#">Sort By price:low to high</a></li>
+                <li><a class="dropdown-item" href="#">Sort By price:high to low</a></li>
+              </ul>
+            </div>
+          </div>
+         <div class="col-lg-3">
+        <a href="women1.html"> <img src="./card-products/list.png" class="toggle" alt=""></a>
+         <a href="Women.html"> <img src="./card-products/menu.png" class="grid" alt=""></a>
+         </div>
+           </div>
+        </div>
+    <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+          <div class="vs-product product-style7 ">
+          <div class="product-img">
+            <a href="shop-details.html" tabindex="0"><img src="card-products/product1.png" alt="Image" class="image1"></a>
+          </div>
+          <div class="product-content">
+            <div class="star-rating" role="img" aria-label="Rated 5 out of 5">
+              <!-- <span style="width:100%">Rated <strong class="rating">5</strong> out of 5</span> -->
+              <div class="card-star">
+                <img src="./card-products/star.svg" alt="" width="15px" class="star">
+                <img src="./card-products/star.svg" alt="" width="15px" class="star">
+                <img src="./card-products/star.svg" alt="" width="15px" class="star">
+                <img src="./card-products/star.svg" alt="" width="15px" class="star">
+                <img src="./card-products/star.svg" alt="" width="15px" class="star">
+               </div>
+            </div>
+            <h3 class="product-title">
+              
+              <a href="shop-details.html" tabindex="0">
+                Women Solid Round Neck Wool Blend Pink T-Shirt
+              </a>
+            </h3>
+            <!-- <span class="product-weight">CBD 100MG</span> -->
+            <span class="product-price">$19.85<del>$23.85</del></span>
+            <a href="cart.html" class="cart-btn"><i class="fas fa-shopping-basket"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6">
+          <div class="vs-product product-style7">
+          <div class="product-img">
+            <a href="shop-details.html" tabindex="0"><img src="card-products/product1.png" alt="Image" class="image1"></a>
+          </div>
+          <div class="product-content">
+            <div class="star-rating" role="img" aria-label="Rated 5 out of 5">
+              <!-- <span style="width:100%">Rated <strong class="rating">5</strong> out of 5</span> -->
+              <div class="card-star">
+                <img src="./card-products/star.svg" alt="" width="15px" class="star">
+                <img src="./card-products/star.svg" alt="" width="15px" class="star">
+                <img src="./card-products/star.svg" alt="" width="15px" class="star">
+                <img src="./card-products/star.svg" alt="" width="15px" class="star">
+                <img src="./card-products/star.svg" alt="" width="15px" class="star">
+               </div>
+            </div>
+            <h3 class="product-title">
+               <a href="shop-details.html" tabindex="0">
+                Women Solid Round Neck Wool Blend Pink T-Shirt
+              </a>
+            </h3>
+            <!-- <span class="product-weight">CBD 100MG</span> -->
+            <span class="product-price">$19.85<del>$23.85</del></span>
+            <a href="cart.html" class="cart-btn"><i class="fas fa-shopping-basket"></i></a>
+          </div>
+        </div>
+      </div>
+      </div>
+      </div>
+      <br><br>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+      
+        
+        <div class="vs-product product-style7">
+          <div class="product-img">
+            <a href="shop-details.html" tabindex="0"><img src="card-products/product1.png" alt="Image" class="image1"></a>
+          </div>
+          <div class="product-content">
+            <div class="star-rating" role="img" aria-label="Rated 5 out of 5">
+              <!-- <span style="width:100%">Rated <strong class="rating">5</strong> out of 5</span> -->
+              <div class="card-star">
+                <img src="./card-products/star.svg" alt="" width="15px" class="star">
+                <img src="./card-products/star.svg" alt="" width="15px" class="star">
+                <img src="./card-products/star.svg" alt="" width="15px" class="star">
+                <img src="./card-products/star.svg" alt="" width="15px" class="star">
+                <img src="./card-products/star.svg" alt="" width="15px" class="star">
+               </div>
+            </div>
+            <h3 class="product-title">
+              
+              <a href="shop-details.html" tabindex="0">
+                Women Solid Round Neck Wool Blend Pink T-Shirt
+              </a>
+            </h3>
+            <!-- <span class="product-weight">CBD 100MG</span> -->
+            <span class="product-price">$19.85<del>$23.85</del></span>
+            <a href="cart.html" class="cart-btn"><i class="fas fa-shopping-basket"></i></a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-lg-6">
+          <div class="vs-product product-style7">
+          <div class="product-img">
+            <a href="shop-details.html" tabindex="0"><img src="card-products/product1.png" alt="Image" class="image1"></a>
+          </div>
+          <div class="product-content">
+            <div class="star-rating" role="img" aria-label="Rated 5 out of 5">
+              <!-- <span style="width:100%">Rated <strong class="rating">5</strong> out of 5</span> -->
+              <div class="card-star">
+                <img src="./card-products/star.svg" alt="" width="15px" class="star">
+                <img src="./card-products/star.svg" alt="" width="15px" class="star">
+                <img src="./card-products/star.svg" alt="" width="15px" class="star">
+                <img src="./card-products/star.svg" alt="" width="15px" class="star">
+                <img src="./card-products/star.svg" alt="" width="15px" class="star">
+               </div>
+            </div>
+            <h3 class="product-title">
+               <a href="shop-details.html" tabindex="0">
+                Women Solid Round Neck Wool Blend Pink T-Shirt
+              </a>
+            </h3>
+            <!-- <span class="product-weight">CBD 100MG</span> -->
+            <span class="product-price">$19.85<del>$23.85</del></span>
+            <a href="cart.html" class="cart-btn"><i class="fas fa-shopping-basket"></i></a>
+          </div>
+        </div>
+      </div>
+      </div>
+      </div>
+      <br><br>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+      
+        
+        <div class="vs-product product-style7">
+          <div class="product-img">
+            <a href="shop-details.html" tabindex="0"><img src="card-products/product1.png" alt="Image" class="image1"></a>
+          </div>
+          <div class="product-content">
+            <div class="star-rating" role="img" aria-label="Rated 5 out of 5">
+              <!-- <span style="width:100%">Rated <strong class="rating">5</strong> out of 5</span> -->
+              <div class="card-star">
+                <img src="./card-products/star.svg" alt="" width="15px" class="star">
+                <img src="./card-products/star.svg" alt="" width="15px" class="star">
+                <img src="./card-products/star.svg" alt="" width="15px" class="star">
+                <img src="./card-products/star.svg" alt="" width="15px" class="star">
+                <img src="./card-products/star.svg" alt="" width="15px" class="star">
+               </div>
+            </div>
+            <h3 class="product-title">
+              
+              <a href="shop-details.html" tabindex="0">
+                Women Solid Round Neck Wool Blend Pink T-Shirt
+              </a>
+            </h3>
+            <!-- <span class="product-weight">CBD 100MG</span> -->
+            <span class="product-price">$19.85<del>$23.85</del></span>
+            <a href="cart.html" class="cart-btn"><i class="fas fa-shopping-basket"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6">
+          <div class="vs-product product-style7">
+          <div class="product-img">
+            <a href="shop-details.html" tabindex="0"><img src="card-products/product1.png" alt="Image" class="image1"></a>
+          </div>
+          <div class="product-content">
+            <div class="star-rating" role="img" aria-label="Rated 5 out of 5">
+              <!-- <span style="width:100%">Rated <strong class="rating">5</strong> out of 5</span> -->
+              <div class="card-star">
+                <img src="./card-products/star.svg" alt="" width="15px" class="star">
+                <img src="./card-products/star.svg" alt="" width="15px" class="star">
+                <img src="./card-products/star.svg" alt="" width="15px" class="star">
+                <img src="./card-products/star.svg" alt="" width="15px" class="star">
+                <img src="./card-products/star.svg" alt="" width="15px" class="star">
+               </div>
+            </div>
+            <h3 class="product-title">
+               <a href="shop-details.html" tabindex="0">
+                Women Solid Round Neck Wool Blend Pink T-Shirt
+              </a>
+            </h3>
+            <!-- <span class="product-weight">CBD 100MG</span> -->
+            <span class="product-price">$19.85<del>$23.85</del></span>
+            <a href="cart.html" class="cart-btn"><i class="fas fa-shopping-basket"></i></a>
+          </div>
+        </div>
+      </div>
+      </div>
+      </div>
+</body>
+</html>
