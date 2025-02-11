@@ -52,6 +52,8 @@
 
     .product-card:hover {
         box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        border: 1px solid black;
+        cursor: pointer;
     }
 
     .grid-view .product-card {
@@ -65,14 +67,14 @@
     .list-view .product-card {
         display: flex;
         align-items: center;
-        justify-content: flex-start;
+        /* justify-content: flex-start; */
     }
 
     .list-view .product-card img {
         width: 150px;
         height: 150px;
         margin-right: 20px;
-        border-bottom: none;
+        /* border-bottom: none; */
     }
 
     .product-details {
@@ -99,6 +101,71 @@
 
 <body>
     <!-- navbar -->
+      <!-- Nabar & Darkmode -->
+    <div id="navbar" class="nav_styling ">
+        <!-- <div class="container ">
+            <div class=" d-flex flex-wrap gap-md-5 gap-3 theme justify-content-between px-md-0 px-1 py-2">
+                <div class="">
+                    <p>Welcome to our SilverTex store !
+                    </p>
+                </div>
+                <div class="d-flex flex-wrap gap-md-5 gap-3 justify-content-center align-items-center">
+                    <a href=""
+                        class="text-decoration-none theme d-flex gap-1 justify-content-center align-items-center"><i
+                            class="fa-brands fa-whatsapp"></i></i>+91 7010062741</a>
+                    <div class="support ">
+
+                        <a href="tel:+919500000000"
+                            class="text-decoration-none theme d-flex gap-1 justify-content-center align-items-center"><i
+                                class="  fa-solid fa-phone   me-1"></i>+91 7010062741</a>
+                    </div>
+                    <div class="d-none d-md-flex">
+                        <a href="mailto:abcd@gmail.com"
+                            class="text-decoration-none theme  d-flex gap-1 justify-content-center align-items-center"><i
+                                class="footer_icons  fa-regular fa-envelope fw-bold "></i>Info@Info@silvertex.in </a>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+
+        <nav class="navbar border border-dark  navbar-expand-lg py-3 px-md-0 px-1 " aria-label="Thirteenth navbar example">
+            <div class="container ">
+
+                <a href="./index.html" class="text-decoration-none theme">SilverTex</a>
+
+                <button class="navbar-toggler border-white" type="button" data-bs-toggle="collapse"
+                    data-bs-toggle="collapse" data-bs-target="#navbarsExample11" aria-controls="navbarsExample11"
+                    aria-expanded="true" aria-label="Toggle navigation">
+                    <span class="theme"><i class="fa-solid fa-bars"></i></span>
+                </button>
+
+                <div class="collapse navbar-collapse d-lg-flex" id="navbarsExample11">
+                    <a class="navbar-brand col-lg-3 me-0" href="#">
+                        <a href="./index.html"><img class="d-none" src="./assets/img/logo.png" alt=""></a>
+                    </a>
+                    <ul class="navbar-nav col-lg-6 align-items-center justify-content-lg-center">
+                        <li class="nav-item">
+                        <li><a href="./index.html" class=" px-2 theme text-decoration-none">Home</a></li>
+                        </li>
+                        <li class="nav-item">
+                        <li><a href="./Kids.html" class=" px-2 theme text-decoration-none">Kids</a></li>
+                        </li>
+                        <li class="nav-item">
+
+                        <li><a href="./Women.html" class=" px-2 theme text-decoration-none">Women</a></li>
+                        </li>
+                        <li><a href="./Men.html" class=" px-2 theme text-decoration-none">Men</a></li>
+                        </li>
+
+                    </ul>
+                    <div class="d-flex  justify-content-center justify-content-md-end gap-2 col-lg-3 p-3 p-md-0">
+                        <a href="" class="theme"><button type="button" id="themeToggle"
+                                class="btn btn-outline-dark theme">Theme</button></a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
 
 
 
@@ -106,123 +173,160 @@
     <div class="container">
         <div class="row">
             <div class="view-toggle ">
-                <button id="grid-view-btn" class="btn btn-dark"><i class="fa-solid fa-table-cells"></i></button>
-                <button id="list-view-btn" class="btn btn-dark"><i class="fa-solid fa-list"></i></button>
+                <button id="grid-view-btn" class="btn btn-dark mt-2"><i class="fa-solid fa-table-cells"></i></button>
+                <button id="list-view-btn" class="btn btn-dark mt-2"><i class="fa-solid fa-list"></i></button>
             </div>
+
             <div class="col-lg">
                 <div class="product-container grid-view" id="product-container">
                     <div class="product-card w-100">
                         <img src="./assets/img/men/Men Product (1).avif" alt="Product 1">
-                        <h5 class="">DEFAULT</h5>
-                        <p class=""><span>&#8377</span>100.00</p>
-                        <button class="btn btn-dark mt-2">BUY</button>
+                        <div class="content">
+                            <h5 class="">DEFAULT</h5>
+                            <p class=""><span>&#8377</span>100.00</p>
+                            <button class="btn btn-dark mt-1">BUY</button>
+                        </div>
+                        
                     </div>
 
                     <div class="product-card  w-100">
                         <img src="./assets/img/men/Men Product (2).avif" alt="Product 2">
-                        <h5>DEFAULT</h5>
-                        <p><span>&#8377</span>120.00</p>
-                        <button class="btn btn-dark mt-2">BUY</button>
+                        <div class="content">
+                            <h5 class="">DEFAULT</h5>
+                            <p class=""><span>&#8377</span>100.00</p>
+                            <button class="btn btn-dark mt-1">BUY</button>
+                        </div>
                     </div>
                     <div class="product-card  w-100">
                         <img src="./assets/img/men/Men Product (3).avif" alt="Product 2">
-                        <h5>DEFAULT</h5>
-                        <p><span>&#8377</span>120.00</p>
-                        <button class="btn btn-dark mt-2">BUY</button>
+                        <div class="content">
+                            <h5 class="">DEFAULT</h5>
+                            <p class=""><span>&#8377</span>100.00</p>
+                            <button class="btn btn-dark mt-1">BUY</button>
+                        </div>
                     </div>
                     <div class="product-card w-100">
                         <img src="./assets/img/men/Men Product (6).avif" alt="Product 2">
-                        <h3>Product 2</h3>
-                        <p><span>&#8377</span>120.00</p>
-                        <button class="btn btn-dark mt-2">BUY</button>
+                        <div class="content">
+                            <h5 class="">DEFAULT</h5>
+                            <p class=""><span>&#8377</span>100.00</p>
+                            <button class="btn btn-dark mt-1">BUY</button>
+                        </div>
                     </div>
                 </div>
 
             </div>
+
             <div class="col-lg">
                 <div class="product-container grid-view" id="product-container2">
                     <div class="product-card w-100">
                         <img src="./assets/img/men/Men Product (4).avif" alt="Product 1">
-                        <h5>DEFAULT</h5>
-                        <p><span>&#8377</span>100.00</p>
-                        <button class="btn btn-dark mt-2">BUY</button>
+                        <div class="content">
+                            <h5 class="">DEFAULT</h5>
+                            <p class=""><span>&#8377</span>100.00</p>
+                            <button class="btn btn-dark mt-1">BUY</button>
+                        </div>
                     </div>
 
                     <div class="product-card w-100">
                         <img src="./assets/img/men/Men Product (5).avif" alt="Product 2">
-                        <h5>DEFAULT</h5>
-                        <p><span>&#8377</span>120.00</p>
-                        <button class="btn btn-dark mt-2">BUY</button>
+                        <div class="content">
+                            <h5 class="">DEFAULT</h5>
+                            <p class=""><span>&#8377</span>100.00</p>
+                            <button class="btn btn-dark mt-1">BUY</button>
+                        </div>
                     </div>
                     <div class="product-card w-100">
                         <img src="./assets/img/men/Men Product (6).avif" alt="Product 2">
-                        <h5>DEFAULT</h5>
-                        <p><span>&#8377</span>120.00</p>
-                        <button class="btn btn-dark mt-2">BUY</button>
+                        <div class="content">
+                            <h5 class="">DEFAULT</h5>
+                            <p class=""><span>&#8377</span>100.00</p>
+                            <button class="btn btn-dark mt-1">BUY</button>
+                        </div>
                     </div>
                     <div class="product-card w-100">
                         <img src="./assets/img/men/Men Product (6).avif" alt="Product 2">
-                        <h5>DEFAULT</h5>
-                        <p><span>&#8377</span>120.00</p>
-                        <button class="btn btn-dark mt-2">BUY</button>
+                        <div class="content">
+                            <h5 class="">DEFAULT</h5>
+                            <p class=""><span>&#8377</span>100.00</p>
+                            <button class="btn btn-dark mt-1">BUY</button>
+                        </div>
                     </div>
                 </div>
             </div>
+
             <div class="col-lg">
                 <div class="product-container grid-view" id="product-container3">
                     <div class="product-card w-100">
                         <img src="./assets/img/men/Men Product (7).avif" alt="Product 1">
-                        <h5>DEFAULT</h5>
-                        <p><span>&#8377</span> 100.00</p>
-                        <button class="btn btn-dark mt-2">BUY</button>
+                        <div class="content">
+                            <h5 class="">DEFAULT</h5>
+                            <p class=""><span>&#8377</span>100.00</p>
+                            <button class="btn btn-dark mt-1">BUY</button>
+                        </div>
                     </div>
 
                     <div class="product-card w-100">
                         <img src="./assets/img/men/Men Product (8).avif" alt="Product 2">
-                        <h5>DEFAULT</h5>
-                        <p><span>&#8377</span> 120.00</p>
-                        <button class="btn btn-dark mt-2">BUY</button>
+                        <div class="content">
+                            <h5 class="">DEFAULT</h5>
+                            <p class=""><span>&#8377</span>100.00</p>
+                            <button class="btn btn-dark mt-1">BUY</button>
+                        </div>
                     </div>
                     <div class="product-card w-100">
                         <img src="./assets/img/men/Men Product (9).avif" alt="Product 2">
-                        <h5>DEFAULT</h5>
-                        <p><span>&#8377</span> 120.00</p>
-                        <button class="btn btn-dark mt-2">BUY</button>
+                        <div class="content">
+                            <h5 class="">DEFAULT</h5>
+                            <p class=""><span>&#8377</span>100.00</p>
+                            <button class="btn btn-dark mt-1">BUY</button>
+                        </div>
                     </div>
                     <div class="product-card w-100">
                         <img src="./assets/img/men/Men Product (10).avif" alt="Product 2">
-                        <h5>DEFAULT</h5>
-                        <p><span>&#8377</span> 120.00</p>
-                        <button class="btn btn-dark mt-2">BUY</button>
+                        <div class="content">
+                            <h5 class="">DEFAULT</h5>
+                            <p class=""><span>&#8377</span>100.00</p>
+                            <button class="btn btn-dark mt-1">BUY</button>
+                        </div>
                     </div>
                 </div>
             </div>
+
             <div class="col-lg">
                 <div class="product-container grid-view" id="product-container4">
                     <div class="product-card w-100">
                         <img src="./assets/img/men/Men Product (11).avif" alt="Product 1">
-                        <h5>DEFAULT</h5>
-                        <p><span>&#8377</span> 100.00</p>
-                        <button class="btn btn-dark mt-2">BUY</button>
+                        <div class="content">
+                            <h5 class="">DEFAULT</h5>
+                            <p class=""><span>&#8377</span>100.00</p>
+                            <button class="btn btn-dark mt-1">BUY</button>
+                        </div>
                     </div>
 
                     <div class="product-card w-100">
                         <img src="./assets/img/men/Men Product (12).avif" alt="Product 2">
-                        <h5>DEFAULT</h5>
-                        <p><span>&#8377</span> 120.00</p>
-                        <button class="btn btn-dark mt-2">BUY</button>
+                        <div class="content">
+                            <h5 class="">DEFAULT</h5>
+                            <p class=""><span>&#8377</span>100.00</p>
+                            <button class="btn btn-dark mt-1">BUY</button>
+                        </div>
                     </div>
                     <div class="product-card w-100">
                         <img src="./assets/img/men/Men Product (13).avif" alt="Product 2">
-                        <h5>DEFAULT</h5>
-                        <p><span>&#8377</span> 120.00</p>
-                        <button class="btn btn-dark mt-2">BUY</button>
+                        <div class="content">
+                            <h5 class="">DEFAULT</h5>
+                            <p class=""><span>&#8377</span>100.00</p>
+                            <button class="btn btn-dark mt-1">BUY</button>
+                        </div>
                     </div>
                     <div class="product-card w-100 ">
                         <img src="./assets/img/men/Men Product (14).avif" alt="Product 2">
-                        <h5>DEFAULT</h5>
-                        <p><span>&#8377</span> 120.00</p>
-                        <button class="btn btn-dark mt-2">BUY</button>
+                        <div class="content">
+                            <h5 class="">DEFAULT</h5>
+                            <p class=""><span>&#8377</span>100.00</p>
+                            <button class="btn btn-dark mt-1">BUY</button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -304,6 +408,8 @@
 
 
             </script>
+
+            <script src="./assets/js/script.js"></script>
 
 </body>
 
