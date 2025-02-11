@@ -25,30 +25,6 @@ document.addEventListener("DOMContentLoaded", function () {
 //----------------------------------- Dark Mode End ---------------------------------------------------
 
 
-// Navbar Scrol
-
-
-// document.addEventListener("DOMContentLoaded", () => {
-
-//     const navbar = document.getElementById("navbar");
-
-//     if (!navbar) return; // Prevent errors if navbar is missing
-
-//     window.addEventListener("scroll", () => {
-
-//         if (window.scrollY > 50) {
-
-//             navbar.classList.add("bg-white");
-
-//         } else {
-
-//             navbar.classList.remove("bg-white");
-
-//         }
-//     });
-// });
-
-
 //  check
 const gridViewBtn = document.getElementById('grid-view-btn');
 const listViewBtn = document.getElementById('list-view-btn');
