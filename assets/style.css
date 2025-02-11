@@ -1,18 +1,3 @@
-/* .navbarr {
-    position: sticky !important;
-    width: 100% !important;
-    top: 0 !important;
-    z-index: 10 !important;
-    backdrop-filter: blur(30px);
-} */
-
-*{
-    /* font-family: "Lexend Giga", serif; */
-    font-family: "Bebas Neue", serif;
-
-}
-
-
 
 /*--------------------------------------------  Dark Theme ------------------------------------------- */
 
@@ -37,20 +22,10 @@ body {
     color: #fff;
 }
 
-
 /*--------------------------------------------  Dark Theme ------------------------------------------- */
 
 
-
 /*---------------------------------------------- Navebar---------------------------------------------- */
-
-.nav_styling {
-
-    top: 0;
-    width: 100%;
-
-
-}
 
 
 /*---------------------------------------------- Navebar End ------------------------------------------ */
@@ -85,26 +60,34 @@ body {
         display: none;
     }
 
-    .hero_section_img {
+    .rouded_css {
+        border-radius: 40px;
+    }
 
-
-        height: 400px;
-        width: 100%;
-
+    .carousel-control-one {
+       display: none;
+    }
+    
+    
+    .carousel-control-two {
+        display: none;
     }
 
 }
 
 /*--------------------------------------------- hero seciton  ------------------------------------------ */
 
-.hero_section_contents {
 
-}
+
 
 
 
 
 /*--------------------------------------------- hero seciton end ------------------------------------------ */
+
+
+
+
 .footer_icons:hover {
 
     background-color: white;
@@ -116,12 +99,125 @@ body {
 }
 
 
-/*-------------------------- Kid_Card ------------------------ */
+/*-------------------------- Card ------------------------ */
 
 
 
-/*-------------------------- Kid_Card ------------------------ */
+.card_uss {
+    --bs-card-spacer-y: 1rem;
+    --bs-card-spacer-x: 1rem;
+    --bs-card-title-spacer-y: 0.5rem;
+    --bs-card-title-color: ;
+    --bs-card-subtitle-color: ;
+    --bs-card-border-width: var(--bs-border-width);
+    --bs-card-border-color: var(--bs-border-color-translucent);
+    --bs-card-border-radius: var(--bs-border-radius);
+    --bs-card-box-shadow: ;
+    --bs-card-inner-border-radius: calc(var(--bs-border-radius) - (var(--bs-border-width)));
+    --bs-card-cap-padding-y: 0.5rem;
+    --bs-card-cap-padding-x: 1rem;
+    --bs-card-cap-bg: rgba(var(--bs-body-color-rgb), 0.03);
+    --bs-card-cap-color: ;
+    --bs-card-height: ;
+    --bs-card-color: ;
+    --bs-card-bg: var(--bs-body-bg);
+    --bs-card-img-overlay-padding: 1rem;
+    --bs-card-group-margin: 0.75rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    height: var(--bs-card-height);
+    color: var(--bs-body-color);
+    word-wrap: break-word;
+    background-clip: border-box;
+    border-radius: var(--bs-card-border-radius);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    border-radius: 10px;
+    overflow: hidden;
+}
 
+.card_css {
+
+    --bs-card-spacer-y: 1rem;
+    --bs-card-spacer-x: 1rem;
+    --bs-card-title-spacer-y: 0.5rem;
+    --bs-card-title-color: ;
+    --bs-card-subtitle-color: ;
+    --bs-card-border-width: var(--bs-border-width);
+    --bs-card-border-color: var(--bs-border-color-translucent);
+    --bs-card-border-radius: var(--bs-border-radius);
+    --bs-card-box-shadow: ;
+    --bs-card-inner-border-radius: calc(var(--bs-border-radius) - (var(--bs-border-width)));
+    --bs-card-cap-padding-y: 0.5rem;
+    --bs-card-cap-padding-x: 1rem;
+    --bs-card-cap-bg: rgba(var(--bs-body-color-rgb), 0.03);
+    --bs-card-cap-color: ;
+    --bs-card-height: ;
+    --bs-card-color: ;
+    --bs-card-bg: var(--bs-body-bg);
+    --bs-card-img-overlay-padding: 1rem;
+    --bs-card-group-margin: 0.75rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    height: var(--bs-card-height);
+    color: var(--bs-body-color);
+    word-wrap: break-word;
+    background-clip: border-box;
+    border-radius: var(--bs-card-border-radius);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+
+
+.card_uss:hover {
+
+    transform: translateY(-10px);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+
+
+
+/*-------------------------- Card End ------------------------ */
+
+
+/*-------------------------- Trednding Products ------------------------ */
+
+.carousel-control-one {
+    position: relative;
+    left: -90px;
+    top: -350px;
+}
+
+
+.carousel-control-two {
+    position: relative;
+    left: 90px;
+    top: -350px;
+}
+
+
+
+/*-------------------------- Trednding Products End ------------------------ */
+/*-------------------------- customer_review  ------------------------ */
+.customer_review {
+
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+/*-------------------------- customer_review End ------------------------ */
+
+/*-------------------------- Fab ------------------------------ */
 
 .fab {
     width: 50px;
@@ -145,3 +241,33 @@ body {
     display: flex;
     flex-wrap: wrap;
 }
+
+
+/*-------------------------- Fab End --------------------------- */
+
+button {
+    position: relative;
+    overflow: hidden;
+    background-color: #ff4500;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  
+  button::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(120deg, transparent, rgba(255, 255, 255, 0.5), transparent);
+    transition: all 0.6s;
+  }
+  
+  button:hover::before {
+    left: 100%;
+  }
+  
