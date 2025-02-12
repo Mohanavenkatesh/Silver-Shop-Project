@@ -5,24 +5,373 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>SilverTex</title>
-
     <!-- Bootstrap Link Tag -->
     <link rel="stylesheet" href="assets/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-
-
-    <!-- link for font -->
-
-
     <!-- Font Awesome Link Tag -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-
 </head>
 
 <body>
+
+    <style>
+        /*--------------------------------------------  Dark Theme ------------------------------------------- */
+
+        /* Light Theme */
+        body {
+            background-color: #ffffff;
+            color: #000000;
+        }
+
+        .theme {
+            color: #000000;
+        }
+
+
+        /* Dark Theme */
+        .dark-theme {
+            background-color: #121212;
+            color: #ffffff;
+        }
+
+        .dark-theme .theme {
+            color: #fff;
+        }
+
+        /*--------------------------------------------  Dark Theme ------------------------------------------- */
+
+
+        /*---------------------------------------------- Navebar---------------------------------------------- */
+
+
+        /*---------------------------------------------- Navebar End ------------------------------------------ */
+
+        @media screen and (max-width:500px) {
+            .fab {
+                width: 50px;
+                height: 50px;
+                /* background: url(../img/arrow.png); */
+                background-color: black;
+
+                opacity: 0.5;
+                cursor: pointer;
+                border-radius: 50%;
+                background-position: center;
+                background-size: contain;
+                position: fixed;
+                top: 91%;
+                left: 84%;
+                display: flex;
+                flex-wrap: wrap;
+                z-index: 1;
+            }
+
+            .darkbut {
+                position: relative;
+                right: 15px !important;
+            }
+
+            .insta,
+            .face {
+                display: none;
+            }
+
+            .rouded_css {
+                border-radius: 40px;
+            }
+
+            .carousel-control-one {
+                display: none;
+            }
+
+
+            .carousel-control-two {
+                display: none;
+            }
+
+        }
+
+        /*--------------------------------------------- hero seciton  ------------------------------------------ */
+
+
+
+
+
+
+
+        /*--------------------------------------------- hero seciton end ------------------------------------------ */
+
+
+
+
+        .footer_icons:hover {
+
+            background-color: white;
+            color: black;
+            cursor: pointer;
+        }
+
+
+        /*-------------------------- Card ------------------------ */
+
+
+
+        .card_uss {
+            --bs-card-spacer-y: 1rem;
+            --bs-card-spacer-x: 1rem;
+            --bs-card-title-spacer-y: 0.5rem;
+            --bs-card-title-color: ;
+            --bs-card-subtitle-color: ;
+            --bs-card-border-width: var(--bs-border-width);
+            --bs-card-border-color: var(--bs-border-color-translucent);
+            --bs-card-border-radius: var(--bs-border-radius);
+            --bs-card-box-shadow: ;
+            --bs-card-inner-border-radius: calc(var(--bs-border-radius) - (var(--bs-border-width)));
+            --bs-card-cap-padding-y: 0.5rem;
+            --bs-card-cap-padding-x: 1rem;
+            --bs-card-cap-bg: rgba(var(--bs-body-color-rgb), 0.03);
+            --bs-card-cap-color: ;
+            --bs-card-height: ;
+            --bs-card-color: ;
+            --bs-card-bg: var(--bs-body-bg);
+            --bs-card-img-overlay-padding: 1rem;
+            --bs-card-group-margin: 0.75rem;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            min-width: 0;
+            height: var(--bs-card-height);
+            color: var(--bs-body-color);
+            word-wrap: break-word;
+            background-clip: border-box;
+            border-radius: var(--bs-card-border-radius);
+            transition: transform 0.4s ease, box-shadow 0.4s ease;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .card_css {
+
+            --bs-card-spacer-y: 1rem;
+            --bs-card-spacer-x: 1rem;
+            --bs-card-title-spacer-y: 0.5rem;
+            --bs-card-title-color: ;
+            --bs-card-subtitle-color: ;
+            --bs-card-border-width: var(--bs-border-width);
+            --bs-card-border-color: var(--bs-border-color-translucent);
+            --bs-card-border-radius: var(--bs-border-radius);
+            --bs-card-box-shadow: ;
+            --bs-card-inner-border-radius: calc(var(--bs-border-radius) - (var(--bs-border-width)));
+            --bs-card-cap-padding-y: 0.5rem;
+            --bs-card-cap-padding-x: 1rem;
+            --bs-card-cap-bg: rgba(var(--bs-body-color-rgb), 0.03);
+            --bs-card-cap-color: ;
+            --bs-card-height: ;
+            --bs-card-color: ;
+            --bs-card-bg: var(--bs-body-bg);
+            --bs-card-img-overlay-padding: 1rem;
+            --bs-card-group-margin: 0.75rem;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            min-width: 0;
+            height: var(--bs-card-height);
+            color: var(--bs-body-color);
+            word-wrap: break-word;
+            background-clip: border-box;
+            border-radius: var(--bs-card-border-radius);
+            transition: transform 0.4s ease, box-shadow 0.4s ease;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+
+
+        .card_uss:hover {
+
+            transform: translateY(-10px);
+            box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .card_css {
+            position: relative;
+            overflow: hidden;
+            border-radius: 16px;
+            transition: transform 0.3s ease-in-out;
+            cursor: pointer;
+        }
+
+        .card_css:hover {
+            transform: scale(1.03);
+        }
+
+        /* Image */
+        .card-img {
+            width: 100%;
+            display: block;
+            border-radius: 16px;
+        }
+
+        /* Overlay */
+        .card-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.6);
+            color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 20px;
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.4s ease-in-out, visibility 0.4s ease-in-out;
+        }
+
+        /* Show overlay on hover */
+        .card_css:hover .card-overlay {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        /* Title */
+        .card-title {
+            font-size: 22px;
+            font-weight: bold;
+            margin-bottom: 8px;
+        }
+
+        /* Description */
+        .card-text {
+            font-size: 14px;
+            margin-bottom: 12px;
+        }
+
+        /* Button */
+        .shop-now-btn {
+            background: rgb(252, 233, 220);
+            color: black;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 8px;
+            font-size: 14px;
+            font-weight: 600;
+            opacity: 0;
+            transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out, background 0.3s ease-in-out;
+        }
+
+        /* Show button on hover */
+        .card_css:hover .shop-now-btn {
+            opacity: 1;
+            transform: translateY(-5px);
+        }
+
+        /* Button Hover Effect */
+        .shop-now-btn:hover {
+            background: #000000;
+            color: rgb(255, 255, 255);
+        }
+
+
+        /*-------------------------- Card End ------------------------ */
+
+
+        /*-------------------------- Trednding Products ------------------------ */
+
+        .carousel-control-one {
+            position: relative;
+            left: -90px;
+            top: -350px;
+        }
+
+
+        .carousel-control-two {
+            position: relative;
+            left: 90px;
+            top: -350px;
+        }
+
+        /*-------------------------- Trednding Products End ------------------- */
+
+
+
+
+        /*-------------------------- customer_review  ------------------------ */
+
+
+        .customer_review {
+
+            height: 500px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+        }
+
+        /*-------------------------- customer_review End ------------------------ */
+
+        /*-------------------------- Fab ------------------------------ */
+
+        .fab {
+            width: 50px;
+            height: 50px;
+
+            color: rgb(255, 255, 255);
+            border: 2px solid transparent;
+            cursor: pointer;
+            opacity: 0.5;
+            border-radius: 50%;
+            /* background: url(../img/arrow.png); */
+            background-color: black;
+            background-position: center;
+            background-size: contain;
+            position: fixed;
+            z-index: 1;
+            transform: translatey(2px);
+            transition: 1s;
+            top: 90%;
+            left: 95%;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+
+        /*-------------------------- Fab End --------------------------- */
+
+        button {
+            position: relative;
+            overflow: hidden;
+            background-color: #ff4500;
+            color: white;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        button::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(120deg, transparent, rgba(255, 255, 255, 0.5), transparent);
+            transition: all 0.6s;
+        }
+
+        button:hover::before {
+            left: 100%;
+        }
+    </style>
 
     <!-- Nabar & Darkmode -->
     <div id="navbar" class="nav_styling ">
@@ -153,10 +502,10 @@
 
 
     <!-- Men Kids Woman -->
-    <div class="container px-4 py-5" id="custom-cards">
+    <div class="container px-0 py-3" id="custom-cards">
         <h2 class="pb-2 text-center">Custom Cards</h2>
-        <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
-    
+        <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 ">
+
             <!-- Kids Section -->
             <div class="col p-md-5">
                 <div class="card_css">
@@ -168,7 +517,7 @@
                     </div>
                 </div>
             </div>
-    
+
             <!-- Men Section -->
             <div class="col p-md-5">
                 <div class="card_css">
@@ -180,7 +529,7 @@
                     </div>
                 </div>
             </div>
-    
+
             <!-- Women Section -->
             <div class="col p-md-5">
                 <div class="card_css">
@@ -192,17 +541,17 @@
                     </div>
                 </div>
             </div>
-    
+
         </div>
     </div>
- 
+
     <!-- Trending Products Section -->
     <div class="container p-0 ">
         <h1 class="text-center my-3 ">Trending Products</h1>
-        <div id="trendingCarousel" class="carousel slide mb-6 " data-bs-ride="carousel">
+        <div id="trendingCarousel" class="carousel slide mb-6 py-5" data-bs-ride="carousel">
             <div class="carousel-inner ">
                 <div class="carousel-item active ">
-                    <div class="col p-md-5 d-lg-flex  gap-5 p-md-5 m-md-5 p-4">
+                    <div class="col p-md-5 d-lg-flex  gap-5  ">
                         <div class="card_uss border overflow-hidden rounded-4  shadow theme ">
                             <img src="./assets/img//kids/Trending Products/Kids_Card_.jpg1.jpg" alt="" width="100%">
                             <div class="d-flex flex-column  p-4 text-shadow-1 theme">
@@ -238,7 +587,7 @@
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <div class="col p-md-5 d-lg-flex  gap-5 p-md-5 m-md-5 p-4">
+                    <div class="col p-md-5 d-lg-flex  gap-5 ">
                         <div class="card_uss border overflow-hidden rounded-4  shadow theme ">
                             <img src="./assets/img//kids/Trending Products/Kids_Card_.jpg1.jpg" alt="">
                             <div class="d-flex flex-column  p-4 text-shadow-1 theme">
@@ -274,7 +623,7 @@
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <div class="col p-md-5 d-lg-flex gap-5 p-md-5 m-md-5 p-4">
+                    <div class="col p-md-5 d-lg-flex gap-5  ">
                         <div class="card_uss border overflow-hidden rounded-4  shadow theme ">
                             <img src="./assets/img//kids/Trending Products/Kids_Card_.jpg1.jpg" alt="">
                             <div class="d-flex flex-column  p-4 text-shadow-1 theme">
@@ -332,48 +681,47 @@
     </div>
 
     <!-- Customer Reviews -->
-    <div class="container p-0 customer_review">
-        <h1 class="text-center my-3 "> Happy Clients </h1>
-        <div id="trendingCarousel" class="carousel slide mb-6 " data-bs-ride="carousel">
-            <div class="carousel-inner ">
-                <div class="carousel-item active ">
-                    <div class="col p-md-5 d-lg-flex gap-5 p-md-5 m-md-5 p-4">
-                        <div class="col p-md-5 d-lg-flex   gap-5 p-md-5 m-md-5 p-4">
-                            <p class="text-center w-100">3.Needless to say, beautifully designed theme that serves many
-                                purpose. Even more sutomers support is the best! Highly recommend this theme to anyone
-                                who enjoys a fine product.</p>
-                        </div>
+    <div class="container customer_review">
+        <h1 class="text-center my-4">Happy Clients</h1>
+        <div id="trendingCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="d-flex flex-column align-items-center p-4">
+
+                        <p class="text-center w-75">"This theme is beautifully designed and serves many purposes. The
+                            customer support is outstanding! Highly recommend it to anyone looking for a quality
+                            product."</p>
+                        <h6 class="fw-bold">- John Doe</h6>
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <div class="col p-md-5 d-lg-flex gap-5 p-md-5 m-md-5 p-4">
-                        <div class="col p-md-5 d-lg-flex   gap-5 p-md-5 m-md-5 p-4">
-                            <p class="text-center w-100">3.Needless to say, beautifully designed theme that serves many
-                                purpose. Even more sutomers support is the best! Highly recommend this theme to anyone
-                                who enjoys a fine product.</p>
-                        </div>
+                    <div class="d-flex flex-column align-items-center p-4">
+
+                        <p class="text-center w-75">"A fantastic experience! The design is elegant, and the support team
+                            goes above and beyond. This theme exceeded my expectations."</p>
+                        <h6 class="fw-bold">- Sarah Lee</h6>
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <div class="col p-md-5 d-lg-flex gap-5 p-md-5 m-md-5 p-4">
-                        <div class="col p-md-5 d-lg-flex   gap-5 p-md-5 m-md-5 p-4">
-                            <p class="text-center w-100">3.Needless to say, beautifully designed theme that serves many
-                                purpose. Even more sutomers support is the best! Highly recommend this theme to anyone
-                                who enjoys a fine product.</p>
-                        </div>
+                    <div class="d-flex flex-column align-items-center p-4">
+
+                        <p class="text-center w-75">"One of the best themes I've used. The flexibility, clean design,
+                            and responsive customer support make it an excellent choice."</p>
+                        <h6 class="fw-bold">- Michael Smith</h6>
                     </div>
                 </div>
             </div>
-        </div>
 
+        </div>
     </div>
+
 
     <!-- Footer -->
     <div class="container">
         <footer class="py-5 px-1">
             <div class="row">
                 <div class="col-6 col-md-2 mb-3">
-                    <h5>Section</h5>
+                    <h5>Quick Links</h5>
                     <ul class="nav flex-column">
                         <li class="nav-item mb-2"><a href="#" class="text-decoration-none p-0 theme">Home</a></li>
                         <li class="nav-item mb-2"><a href="#" class="text-decoration-none p-0 theme">Features</a></li>
@@ -384,101 +732,62 @@
                 </div>
 
                 <div class="col-6 col-md-2 mb-3">
-                    <h5>Section</h5>
+                    <h5>Services</h5>
                     <ul class="nav flex-column">
-                        <li class="nav-item mb-2"><a href="#" class="text-decoration-none
-text-decoration-none
-text-decoration-none
-text-decoration-none
-text-decoration-none p-0 theme">Home</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="text-decoration-none
-text-decoration-none
-text-decoration-none
-text-decoration-none
-text-decoration-none p-0 theme">Features</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="text-decoration-none
-text-decoration-none
-text-decoration-none
-text-decoration-none
-text-decoration-none p-0 theme">Pricing</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="text-decoration-none
-text-decoration-none
-text-decoration-none
-text-decoration-none
-text-decoration-none p-0 theme">FAQs</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="text-decoration-none
-text-decoration-none
-text-decoration-none
-text-decoration-none
-text-decoration-none p-0 theme">About</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="text-decoration-none p-0 theme">Web Development</a>
+                        </li>
+                        <li class="nav-item mb-2"><a href="#" class="text-decoration-none p-0 theme">Design</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="text-decoration-none p-0 theme">Consulting</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="text-decoration-none p-0 theme">Support</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="text-decoration-none p-0 theme">Careers</a></li>
                     </ul>
                 </div>
 
                 <div class="col-6 col-md-2 mb-3">
-                    <h5>Section</h5>
+                    <h5>Resources</h5>
                     <ul class="nav flex-column">
-                        <li class="nav-item mb-2"><a href="#" class="text-decoration-none
-text-decoration-none
-text-decoration-none
-text-decoration-none
-text-decoration-none p-0 theme">Home</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="text-decoration-none
-text-decoration-none
-text-decoration-none
-text-decoration-none
-text-decoration-none p-0 theme">Features</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="text-decoration-none
-text-decoration-none
-text-decoration-none
-text-decoration-none
-text-decoration-none p-0 theme">Pricing</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="text-decoration-none
-text-decoration-none
-text-decoration-none
-text-decoration-none
-text-decoration-none p-0 theme">FAQs</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="text-decoration-none
-text-decoration-none
-text-decoration-none
-text-decoration-none
-text-decoration-none p-0 theme">About</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="text-decoration-none p-0 theme">Blog</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="text-decoration-none p-0 theme">Privacy Policy</a>
+                        </li>
+                        <li class="nav-item mb-2"><a href="#" class="text-decoration-none p-0 theme">Terms of
+                                Service</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="text-decoration-none p-0 theme">Help Center</a>
+                        </li>
+                        <li class="nav-item mb-2"><a href="#" class="text-decoration-none p-0 theme">Contact Us</a></li>
                     </ul>
                 </div>
 
                 <div class="col-md-5 offset-md-1 mb-3">
                     <form>
                         <h5>Subscribe to our newsletter</h5>
-                        <p>Monthly digest of what's new and exciting from us.</p>
+                        <p>Stay updated with the latest news and special offers.</p>
                         <div class="d-flex flex-column flex-sm-row w-100 gap-2">
-                            <label for="newsletter1" class="visually-hidden">Email address</label>
-                            <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
-                            <button class="btn btn-dark" type="button">Subscribe</button>
+                            <input id="newsletter1" type="email" class="form-control" placeholder="Enter your email"
+                                required>
+                            <button class="btn btn-dark" type="submit">Subscribe</button>
                         </div>
                     </form>
                 </div>
             </div>
 
             <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
-                <p>© 2024 Company, Inc. All rights reserved.</p>
-                <ul class="list-unstyled d-flex">
-                    <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24">
-                                <use xlink:href="#twitter"></use>
-                            </svg></a></li>
-                    <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24">
-                                <use xlink:href="#instagram"></use>
-                            </svg></a></li>
-                    <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24">
-                                <use xlink:href="#facebook"></use>
-                            </svg></a></li>
+                <p>© 2025 SilverTex, Inc. All rights reserved.</p>
+                <ul class="list-unstyled d-flex align-items-center">
+                    <p class="mb-0 me-2">Developers:</p>
+                    <li class="ms-3"><a class="theme" target="_blank"
+                            href="">Abi</a></li>
+                    <li class="ms-3"><a class="theme" target="_blank"
+                            href="">Mohan</a></li>
+                    <li class="ms-3"><a class="theme" target="_blank" href="">Ebi</a>
+                    </li>
                 </ul>
             </div>
         </footer>
     </div>
 
+
     <!-- Fab -->
-    <!-- <a href="#" class="fab">
-        <p></p>
-    </a> -->
+    
 
     <!-- Bootstrap Script Tag -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
