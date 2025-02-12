@@ -1,676 +1,508 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Product card</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Liter&family=Montserrat:ital,wght@0,100..900;1,100..900&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Bootstrap Link Tag -->
+    <link rel="stylesheet" href="assets/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- Font Awesome Link Tag -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 </head>
-  <body>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        padding: 20px;
+        background-color: #f8f9fa;
+    }
 
-    <!--STYLE CODE-->
-    <style>
-        *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-.header{
-    width: 100%;
-    height:500px;
-   
-}
-.content{
-    position: absolute;
-    top: 40%;
-    left: 10%;
+    .view-toggle {
+        margin-bottom: 20px;
+        text-align: right;
+    }
 
-}
-.content1{
-    position: absolute;
-    display: block;
-    justify-content: center;
-    transform: translate(75%, -500%);
-    font-family: "Quicksand";
-    font-size: 20px;
-    color:black !important;
-    text-decoration:none;
-    text-transform: none;
- }
-  .img{
-    width: 50px;
-    height: 20px;
-  }
-  .add{
-    margin-left: 200px;
-  }
-  .line{
-    margin-bottom: 100px;
-  }
-  .drop{
-    list-style: none;
-  }
-  .dropdown .btn{
-    border-radius: 50px;
-    border-color: gray;
-    padding: 10px 20px;
-    margin-left: 50px;
-    margin-top: 15px;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  }
-  .icon{
-    background-color:rgb(0, 80, 86);
-    padding: 8px 12px;
-    border-radius: 20px;
-    margin-left: 20px;
-  }
-  
-  .contents{
-    font-size: 18px;
-    margin-top: 40px;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  }
-  .span1{
-    color: blue;
-  }
-  .toggle{
-    width: 30px;
-    height: 30px;
-    margin-top: 70px;
-    margin-left: 100px;
-  }
-  .toggle:hover{
-    background-color:rgb(0, 80, 86);
-  }
-  .grid{
-    width: 35px;
-    height: 35px;
-    margin-left: 50px;
-    margin-top:70px ;
-    /* background-color:rgb(0, 80, 86); */
-    padding: 5px 5px;
-    border-radius: 1px;
-  }
-  .grid:hover{
-    background-color:rgb(0, 80, 86);
-  }
-  .stock{
-   border-radius: 20px;
-   padding: 6px 5px;
-   width: 110px;
-   font-size: 13px;
-   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-   border-style: none;
-   background-color:rgb(0, 80, 86);
-   color: azure;
-  }
-  .stockd{
-    border-radius: 20px;
-    padding: 6px 5px;
-    width: 70px;
-    font-size: 13px;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    border-style: none;
-    background-color:rgb(0, 80, 86);
-    color: azure;
-   }
-  
-  .card{
-    border-radius: 30px;
-    
-  }
-  
-  .card-text{
-    font-size: 17px;
-    margin-top: 10px;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-weight: 400;
-  }
-  .card-text:hover{
-    color:rgb(0, 80, 86);
-  }
-  .card:hover{
-    border-color:rgb(0, 80, 86);
-    /* box-shadow: rgb(37, 35, 35); */
-    box-shadow: 0px 0px 2px rgb(85, 83, 83);
-  }
-  .rate{
-    font-size: 20px;
-    margin-top: 10px;
-    font-family: "Outfit", serif;
-    font-weight: 500;
-  }
-  .basket{
-    width: 40px;
-    margin-left: 200px;
-    margin-top: -100px;
-    background-color:rgb(255, 187, 215);
-    padding: 10px 10px;
-    border-radius: 40px;
-  }
-  .stocks{
-    visibility: hidden;
-  }
-  .fst{
-    width: 100%;
-    height: 500px;
-  }
-  .header{
-    background-color: rgb(205, 223, 237);
-    width: 100%;
-    height: 566px;
-  }
-  .text{
-    position: absolute;
-    left: 48%;
-    bottom: 450px;
-    font-family: futura-lt-w01-light;
-    font-size: 50px;
-  }
-  .text1{
-    position: absolute;
-    font-size: 20px;
-    width: 380px;
-    left: 45%;
-    bottom: 420px;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  }
-  .btn1{
-    
-      position: absolute;
-       width: 120px;
-       height: 50px;
-      left: 50%;
-      bottom: 350px;
-      border-style: none;
-      background-color: black;
-      color: white;
-      
+    .product-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
     }
-    .btn2{
-      margin-left: 42%;
-      margin-top: 10%;
-      border-radius: 30px;
-      border-style: none;
-      height: 60px;
-      width: 300px;
-    }
-  .num{
-    font-size: 20px;
-    margin-top: 17px;
-    column-gap: 50px;
-  }
-  
-  .line{
-    width: 10px;
-    height: 20px;
-    margin-bottom:-0px;
-  }
-  .left{
-    width: 23px;
-    height: 23px;
-    margin-right: 30px;
-    margin-bottom: 3px;
-    border-radius: 20px;
-    background-color: rgb(54, 124, 124);
-  }
-  .right{
-    width: 23px;
-    height: 23px;
-    margin-left: 30px;
-    border-radius: 30px;
-    margin-bottom: 3px;
-    background-color: rgb(54, 124, 124);
-  }
-  .image1{
-    width: 250px;
-    height: 250px;
-  }
-  .product-style7 {
-    display: flex;
-    align-items: stretch;
-    border: 1px solid gray;
-    border-radius: 30px;
-    position: relative;
-    flex-wrap: wrap;
-    justify-content: center;
-    width: 600px;
-}
-.product-style7 .product-img {
-    flex: 0 0 auto;
-    display: flex;
-    align-items: center;
-    border: 1px solid grey;
-    border-radius: 30px;
-    overflow: hidden;
-    margin: -1px;
-}
-.product-style7 .product-content {
-    padding: 20px 60px 20px 40px;
-    flex: 1;
-    align-self: center;
-}
-.product-style7 .star-rating {
-    margin-bottom: 15px;
-}
-.star-rating {
-    overflow: hidden;
-    position: relative;
-    width: 93px;
-    height: 1.2em;
-    line-height: 1.2em;
-    display: block;
-    font-family: var(--icon-font);
-    font-weight: 700;
-    font-size: 14px;
-}
 
-.product-style7 .product-title a{
-  text-decoration: none;
-  color: black;
-  font-size: 18px;
-  margin: -0.14em 0 10px 0;
-}
-.product-style7 .product-title a:hover{
-  color: green;
-}
-.product-style7 .product-price {
-    font-size: 16px;
-    font-weight: 700;
-    
-}
-.product-style7 .product-price del {
-    font-size: 18px;
-    color: var(--text-color);
-    padding-left: 5px;
-    margin-top: 60px;
-}
-.product-style7 .cart-btn {
-    position: absolute;
-    bottom: 10px;
-    right: 30px;
-    --icon-size: 47px;
-    min-width: var(--icon-size);
-    min-height: var(--icon-size);
-    background-color: green;
-    width: var(--icon-size);
-    height: var(--icon-size);
-    color: var(--title-color);
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
-    text-decoration: none;
-    padding: 0;
-    box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.1);
-}
-  
-   
-   
- 
-  @media only  screen and (max-width:600px){
-    .fst{
-      width: 100px;
-      height: 120px;
-      
+    .product-card {
+        border: 1px solid #ddd;
+        padding: 15px;
+        border-radius: 35px;
+        background-color: #fff;
+        transition: box-shadow 0.3s ease;
+        overflow: hidden;
     }
-    .men1{
-      width: 100px;
-      height: 128px;
-     margin-left: 300px;
-      margin-top: -130px;
+
+    .product-card img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        border-bottom: 1px solid #ddd;
+        margin-bottom: 10px;
     }
-   .contents{
-    margin-right: 40px;
-    font-size: 20px;
-   }
-    
-    
-    .dropdown .btn{
-      margin-top: -100px;
-      padding: 3px 5px;
+
+    .product-card:hover {
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        border: 1px solid black;
+        cursor: pointer;
     }
-    .toggle{
-      margin-top: -140px;
-      margin-left: 250px;
+
+    .grid-view .product-card {
+        width: calc(33.333% - 20px);
     }
-    .grid{
-      margin-top: -145px;
-      margin-left: 10px;
+
+    .list-view {
+        flex-direction: column;
     }
-    .card{
-      margin-left: 50px;
-      
+
+    .list-view .product-card {
+        display: flex;
+        align-items: center;
+        /* justify-content: flex-start; */
     }
-    .stock{
-      margin-left: 20px;
+
+    .list-view .product-card img {
+        width: 150px;
+        height: 150px;
+        margin-right: 20px;
+        /* border-bottom: none; */
     }
-    .stockd{
-      margin-left: 20px;
+
+    .product-details {
+        flex: 1;
     }
-    .text1{
-      margin-left:-45px;
-      margin-bottom: 365px;
-      color: black;
-      font-size: 12px;
+
+    .indexnav {
+        z-index: 10 !important;
+        /* top: 10px !important; */
+        /* position:fixed !important; */
+        width: 100%;
     }
-    .text{
-      margin-left: -25px;
-      font-size: 30px;
-      margin-bottom: 350px;
-      position: absolute;
-      font-size: 20px;
-   }
-    .btn1{
-      margin-left:-30px;
-      margin-bottom: 380px;
-      width: 100px;
-      height: 40px;
-      
+
+    .product-details h5 {
+        margin: 0;
+        font-size: 18px;
+        font-weight: bold;
     }
-    .header{
-      height: 120px;
-      width: 100%;
+
+    .product-details p {
+        margin: 5px 0;
+        font-size: 16px;
+        color: #555;
     }
-    .btn2{
-      margin-left: px;
-     margin-right: 10px; 
+
+    .product-details button {
+        margin-top: 10px;
     }
-    
-  }
-   </style>
+</style>
 
 
+<body>
+    <!-- navbar -->
+    <!-- Nabar & Darkmode -->
+    <div id="navbar" class="nav_styling ">
+        <!-- <div class="container ">
+            <div class=" d-flex flex-wrap gap-md-5 gap-3 theme justify-content-between px-md-0 px-1 py-2">
+                <div class="">
+                    <p>Welcome to our SilverTex store !
+                    </p>
+                </div>
+                <div class="d-flex flex-wrap gap-md-5 gap-3 justify-content-center align-items-center">
+                    <a href=""
+                        class="text-decoration-none theme d-flex gap-1 justify-content-center align-items-center"><i
+                            class="fa-brands fa-whatsapp"></i></i>+91 7010062741</a>
+                    <div class="support ">
 
-<!--HTML CODE-->
-   <!--showing item-icons-->
-       <div class="container">
-      <div class="row">
-        <div class="col-lg-3 m-5">
-          <h2 class="contents">Showing items <span class="span1">1-12 </span>in <span class="span1">1000</span> results</h2>
-        </div>
-        <div class="col-lg-2"></div>
-        <div class=" col-lg-3">
-          <div class="dropdown mt-5">
-            <button class="btn"  id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
-              Recently Added<span><i class="icon fa-solid fa-caret-down"></i></span>
-            </button>
-            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-              <li><a class="dropdown-item" href="#">Sort By popularity</a></li>
-              <li><a class="dropdown-item" href="#">Sort By rating</a></li>
-              <li><a class="dropdown-item" href="#">Sort By price:low to high</a></li>
-              <li><a class="dropdown-item" href="#">Sort By price:high to low</a></li>
-            </ul>
-          </div>
-        </div>
-       <div class="col-lg-3">
-       <a href="women1.html"><img src="./card-products/list.png" class="toggle" alt=""></a>
-        <a href="Women.html"><img src="./card-products/menu.png" class="grid" alt=""></a>
-       </div>
-         </div>
-      </div>
-    
-    <!--products-1-->
-<div class="container" id="product-container">
-  <div class="row">
-    <div class="col-lg-3">
-  <div class="card mb-md-0 mb-3" style="width: 300px; height:470px">
-   <button class="stock mt-5 m-lg-3">Out of stock</button>
-      <img src="./card-products/product.png" class="card-img-top" alt="..." width="100px" height="250px">
-      <div class="card-body">
-        <img src="./images/19173807891555590645-128.png" alt="" width="15px" class="star">
-        <img src="./images/19173807891555590645-128.png" alt="" width="15px" class="star">
-        <img src="./images/19173807891555590645-128.png" alt="" width="15px" class="star">
-        <img src="./images/19173807891555590645-128.png" alt="" width="15px" class="star">
-        <img src="./images/19173807891555590645-128.png" alt="" width="15px" class="star">
-        <h1 class="card-text ">Women Solid Round Neck Wool Blend Pink T-Shirt</h1>
-          <h1 class="rate">$32.00</h1>
-         <img src="./card-products/shopping-basket.png" alt="" class="basket">
-      </div>
-    </div>
-  </div>
-  <div class="col-lg-3">
-    <div class="card mb-md-0 mb-3" style="width: 300px; height:470px">
-     <button class="stocks mt-5 m-lg-3">Out of stock</button>
-        <img src="./card-products/product1.png" class="card-img-top" alt="..." width="100px" height="250px">
-        <div class="card-body">
-          <img src="./images/19173807891555590645-128.png" alt="" width="15px" class="star">
-          <img src="./images/19173807891555590645-128.png" alt="" width="15px" class="star">
-          <img src="./images/19173807891555590645-128.png" alt="" width="15px" class="star">
-          <img src="./images/19173807891555590645-128.png" alt="" width="15px" class="star">
-          <img src="./images/19173807891555590645-128.png" alt="" width="15px" class="star">
-          <h1 class="card-text ">Women Solid Round Neck Wool Blend Pink T-Shirt</h1>
-            <h1 class="rate">$32.00</h1>
-            <img src="./card-products/shopping-basket.png" alt="" class="basket">
-        </div>
-      </div>
-    </div>
-    <div class="col-lg-3">
-      <div class="card mb-md-0 mb-3" style="width: 300px; height:470px">
-       <button class="stock mt-5 m-lg-3">Out of stock</button>
-          <img src="./card-products/product2.png" class="card-img-top" alt="..." width="100px" height="250px">
-          <div class="card-body">
-            <img src="./images/19173807891555590645-128.png" alt="" width="15px" class="star">
-            <img src="./images/19173807891555590645-128.png" alt="" width="15px" class="star">
-            <img src="./images/19173807891555590645-128.png" alt="" width="15px" class="star">
-            <img src="./images/19173807891555590645-128.png" alt="" width="15px" class="star">
-            <img src="./images/19173807891555590645-128.png" alt="" width="15px" class="star">
-            <h1 class="card-text ">Women Solid Round Neck Wool Blend Pink T-Shirt</h1>
-              <h1 class="rate">$32.00</h1>
-              <img src="./card-products/shopping-basket.png" alt="" class="basket">
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-3">
-        <div class="card mb-md-0 mb-3" style="width: 300px; height:470px">
-         <button class="stocks mt-5 m-lg-3">Out of stock</button>
-            <img src="./card-products/product3.png" class="card-img-top" alt="..." width="100px" height="250px">
-            <div class="card-body">
-              <img src="./images/19173807891555590645-128.png" alt="" width="15px" class="star">
-              <img src="./images/19173807891555590645-128.png" alt="" width="15px" class="star">
-              <img src="./images/19173807891555590645-128.png" alt="" width="15px" class="star">
-              <img src="./images/19173807891555590645-128.png" alt="" width="15px" class="star">
-              <img src="./images/19173807891555590645-128.png" alt="" width="15px" class="star">
-              <h1 class="card-text ">Women Solid Round Neck Wool Blend Pink T-Shirt</h1>
-                <h1 class="rate">$32.00</h1>
-                <img src="./card-products/shopping-basket.png" alt="" class="basket">
+                        <a href="tel:+919500000000"
+                            class="text-decoration-none theme d-flex gap-1 justify-content-center align-items-center"><i
+                                class="  fa-solid fa-phone   me-1"></i>+91 7010062741</a>
+                    </div>
+                    <div class="d-none d-md-flex">
+                        <a href="mailto:abcd@gmail.com"
+                            class="text-decoration-none theme  d-flex gap-1 justify-content-center align-items-center"><i
+                                class="footer_icons  fa-regular fa-envelope fw-bold "></i>Info@Info@silvertex.in </a>
+                    </div>
+                </div>
             </div>
-          </div>
-        </div>
-</div>
-</div>
-<br><br>
-<!--products-2-->
-<div class="container">
-  <div class="row">
-    <div class="col-lg-3">
-  <div class="card mb-md-0 mb-3" style="width: 300px; height:470px">
-   <button class="stocks mt-5 m-lg-3">Out of stock</button>
-      <img src="./card-products/product4.png" class="card-img-top" alt="..." width="100px" height="250px">
-      <div class="card-body">
-        <img src="./images/19173807891555590645-128.png" alt="" width="15px" class="star">
-        <img src="./images/19173807891555590645-128.png" alt="" width="15px" class="star">
-        <img src="./images/19173807891555590645-128.png" alt="" width="15px" class="star">
-        <img src="./images/19173807891555590645-128.png" alt="" width="15px" class="star">
-        <img src="./images/19173807891555590645-128.png" alt="" width="15px" class="star">
-        <h1 class="card-text ">Women Solid Round Neck Wool Blend Pink T-Shirt</h1>
-          <h1 class="rate">$32.00</h1>
-         <img src="./card-products/shopping-basket.png" alt="" class="basket">
-      </div>
-    </div>
-  </div>
-  <div class="col-lg-3">
-    <div class="card mb-md-0 mb-3" style="width: 300px; height:470px">
-     <button class="stockd mt-5 m-lg-3">New</button>
-        <img src="./card-products/product5.png" class="card-img-top" alt="..." width="100px" height="250px">
-        <div class="card-body">
-          <img src="./images/19173807891555590645-128.png" alt="" width="15px" class="star">
-          <img src="./images/19173807891555590645-128.png" alt="" width="15px" class="star">
-          <img src="./images/19173807891555590645-128.png" alt="" width="15px" class="star">
-          <img src="./images/19173807891555590645-128.png" alt="" width="15px" class="star">
-          <img src="./images/19173807891555590645-128.png" alt="" width="15px" class="star">
-          <h1 class="card-text ">Women Solid Round Neck Wool Blend Pink T-Shirt</h1>
-            <h1 class="rate">$32.00</h1>
-            <img src="./card-products/shopping-basket.png" alt="" class="basket">
-        </div>
-      </div>
-    </div>
-    <div class="col-lg-3">
-      <div class="card mb-md-0 mb-3" style="width: 300px; height:470px">
-       <button class="stocks mt-5 m-lg-3">Out of stock</button>
-          <img src="./card-products/product6.png" class="card-img-top" alt="..." width="100px" height="250px">
-          <div class="card-body">
-            <img src="./images/19173807891555590645-128.png" alt="" width="15px" class="star">
-            <img src="./images/19173807891555590645-128.png" alt="" width="15px" class="star">
-            <img src="./images/19173807891555590645-128.png" alt="" width="15px" class="star">
-            <img src="./images/19173807891555590645-128.png" alt="" width="15px" class="star">
-            <img src="./images/19173807891555590645-128.png" alt="" width="15px" class="star">
-            <h1 class="card-text ">Women Solid Round Neck Wool Blend Pink T-Shirt</h1>
-              <h1 class="rate">$36.00</h1>
-              <img src="./card-products/shopping-basket.png" alt="" class="basket">
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-3">
-        <div class="card mb-md-0 mb-3" style="width: 300px; height:470px">
-         <button class="stockd mt-5 m-lg-3">Sale</button>
-            <img src="./card-products/product7.png" class="card-img-top" alt="..." width="100px" height="250px">
-            <div class="card-body">
-              <img src="./images/19173807891555590645-128.png" alt="" width="15px" class="star">
-              <img src="./images/19173807891555590645-128.png" alt="" width="15px" class="star">
-              <img src="./images/19173807891555590645-128.png" alt="" width="15px" class="star">
-              <img src="./images/19173807891555590645-128.png" alt="" width="15px" class="star">
-              <img src="./images/19173807891555590645-128.png" alt="" width="15px" class="star">
-              <h1 class="card-text ">Women Solid Round Neck Wool Blend Pink T-Shirt</h1>
-                <h1 class="rate">$12.00</h1>
-                <img src="./card-products/shopping-basket.png" alt="" class="basket">
+        </div> -->
+
+        <nav class="navbar border border-dark indexnav navbar-expand-lg py-3 px-md-0 px-1 "
+            aria-label="Thirteenth navbar example">
+            <div class="container ">
+
+                <a href="./index.html" class="text-decoration-none theme">SilverTex</a>
+
+                <button class="navbar-toggler border-white" type="button" data-bs-toggle="collapse"
+                    data-bs-toggle="collapse" data-bs-target="#navbarsExample11" aria-controls="navbarsExample11"
+                    aria-expanded="true" aria-label="Toggle navigation">
+                    <span class="theme"><i class="fa-solid fa-bars"></i></span>
+                </button>
+
+                <div class="collapse navbar-collapse d-lg-flex" id="navbarsExample11">
+                    <a class="navbar-brand col-lg-3 me-0" href="#">
+                        <a href="./index.html"><img class="d-none" src="./assets/img/logo.png" alt=""></a>
+                    </a>
+                    <ul class="navbar-nav col-lg-6 align-items-center justify-content-lg-center">
+                        <li class="nav-item">
+                        <li><a href="./index.html" class=" px-2 theme text-decoration-none">Home</a></li>
+                        </li>
+                        <li class="nav-item">
+                        <li><a href="./Kids.html" class=" px-2 theme text-decoration-none">Kids</a></li>
+                        </li>
+                        <li class="nav-item">
+
+                        <li><a href="./Women.html" class=" px-2 theme text-decoration-none">Women</a></li>
+                        </li>
+                        <li><a href="./Men.html" class=" px-2 theme text-decoration-none">Men</a></li>
+                        </li>
+
+                    </ul>
+                    <div class="d-flex  justify-content-center justify-content-md-end gap-2 col-lg-3 p-3 p-md-0">
+                        <a href="" class="theme"><button type="button" id="themeToggle"
+                                class="btn btn-outline-dark theme">Theme</button></a>
+                    </div>
+                </div>
             </div>
-          </div>
-        </div>
-</div>
-</div>
-   <br><br>
-   <!--products-3-->
-   <div class="container">
-    <div class="row">
-      <div class="col-lg-3">
-    <div class="card mb-md-0 mb-3" style="width: 300px; height:470px">
-     <button class="stock mt-5 m-lg-3">Out of stock</button>
-        <img src="./card-products/product8.png" class="card-img-top" alt="..." width="100px" height="250px">
-        <div class="card-body">
-          <img src="./images/19173807891555590645-128.png" alt="" width="15px" class="star">
-          <img src="./images/19173807891555590645-128.png" alt="" width="15px" class="star">
-          <img src="./images/19173807891555590645-128.png" alt="" width="15px" class="star">
-          <img src="./images/19173807891555590645-128.png" alt="" width="15px" class="star">
-          <img src="./images/19173807891555590645-128.png" alt="" width="15px" class="star">
-          <h1 class="card-text ">Women Solid Round Neck Wool Blend Pink T-Shirt</h1>
-            <h1 class="rate">$11.00</h1>
-            <img src="./card-products/shopping-basket.png" alt="" class="basket">
-        </div>
-      </div>
+        </nav>
     </div>
-    <div class="col-lg-3">
-      <div class="card mb-md-0 mb-3" style="width: 300px; height:470px">
-       <button class="stocks mt-5 m-lg-3">Out of stock</button>
-          <img src="./card-products/product9.png" class="card-img-top" alt="..." width="100px" height="250px">
-          <div class="card-body">
-            <img src="./images/19173807891555590645-128.png" alt="" width="15px" class="star">
-            <img src="./images/19173807891555590645-128.png" alt="" width="15px" class="star">
-            <img src="./images/19173807891555590645-128.png" alt="" width="15px" class="star">
-            <img src="./images/19173807891555590645-128.png" alt="" width="15px" class="star">
-            <img src="./images/19173807891555590645-128.png" alt="" width="15px" class="star">
-            <h1 class="card-text ">Women Solid Round Neck Wool Blend Pink T-Shirt</h1>
-              <h1 class="rate">$10.00</h1>
-              <img src="./card-products/shopping-basket.png" alt="" class="basket">
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-3">
-        <div class="cc card mb-md-0 mb-3" style="width: 300px; height:470px">
-         <button class="stock mt-5 m-lg-3">New Seller</button>
-            <img src="./card-products/product10.png" class="card-img-top" alt="..." width="100px" height="250px">
-            <div class="card-body">
-              <img src="./images/19173807891555590645-128.png" alt="" width="15px" class="star">
-              <img src="./images/19173807891555590645-128.png" alt="" width="15px" class="star">
-              <img src="./images/19173807891555590645-128.png" alt="" width="15px" class="star">
-              <img src="./images/19173807891555590645-128.png" alt="" width="15px" class="star">
-              <img src="./images/19173807891555590645-128.png" alt="" width="15px" class="star">
-              <h1 class="card-text ">Women Solid Round Neck Wool Blend Pink T-Shirt</h1>
-                <h1 class="rate">$21.00</h1>
-                <img src="./card-products/shopping-basket.png" alt="" class="basket">
+
+
+
+    <!-- cards -->
+    <div class="container">
+        <div class="row">
+            <div class="view-toggle ">
+                <button id="grid-view-btn" class="btn btn-dark mt-2"><i class="fa-solid fa-table-cells"></i></button>
+                <button id="list-view-btn" class="btn btn-dark mt-2"><i class="fa-solid fa-list"></i></button>
             </div>
-          </div>
-        </div>
-        <div class="col-lg-3">
-          <div class="card mb-md-0 mb-3" style="width: 300px; height:470px">
-           <button class="stocks mt-5 m-lg-3">Out of stock</button>
-              <img src="./card-products/product12.png" class="card-img-top"alt="..." width="100px" height="250px">
-              <div class="card-body">
-                <img src="./images/19173807891555590645-128.png" alt="" width="15px" class="star">
-                <img src="./images/19173807891555590645-128.png" alt="" width="15px" class="star">
-                <img src="./images/19173807891555590645-128.png" alt="" width="15px" class="star">
-                <img src="./images/19173807891555590645-128.png" alt="" width="15px" class="star">
-                <img src="./images/19173807891555590645-128.png" alt="" width="15px" class="star">
-                <h1 class="card-text ">Women Solid Round Neck Wool Blend Pink T-Shirt</h1>
-                  <h1 class="rate">$20.00</h1>
-                  <img src="./card-products/shopping-basket.png" alt="" class="basket">
-                
-              </div>
+
+            <div class="col-lg">
+                <div class="product-container grid-view" id="product-container">
+                    <div class="product-card w-100">
+                        <img src="./assets/img/men/Men Product (1).avif" alt="Product 1">
+                        <div class="content">
+                            <h5 class="">DEFAULT</h5>
+                            <p class=""><span>&#8377</span>100.00</p>
+                            <button class="btn btn-dark mt-1 w-100">BUY</button>
+                        </div>
+
+                    </div>
+
+                    <div class="product-card  w-100">
+                        <img src="./assets/img/men/Men Product (2).avif" alt="Product 2">
+                        <div class="content">
+                            <h5 class="">DEFAULT</h5>
+                            <p class=""><span>&#8377</span>100.00</p>
+                            <button class="btn btn-dark mt-1 w-100">BUY</button>
+                        </div>
+                    </div>
+                    <div class="product-card  w-100">
+                        <img src="./assets/img/men/Men Product (3).avif" alt="Product 2">
+                        <div class="content">
+                            <h5 class="">DEFAULT</h5>
+                            <p class=""><span>&#8377</span>100.00</p>
+                            <button class="btn btn-dark mt-1 w-100">BUY</button>
+                        </div>
+                    </div>
+                    <div class="product-card w-100">
+                        <img src="./assets/img/men/Men Product (6).avif" alt="Product 2">
+                        <div class="content">
+                            <h5 class="">DEFAULT</h5>
+                            <p class=""><span>&#8377</span>100.00</p>
+                            <button class="btn btn-dark mt-1 w-100">BUY</button>
+                        </div>
+                    </div>
+                </div>
+
             </div>
-          </div>
-  </div>
-  </div>
 
-<br>
+            <div class="col-lg">
+                <div class="product-container grid-view" id="product-container2">
+                    <div class="product-card w-100">
+                        <img src="./assets/img/men/Men Product (4).avif" alt="Product 1">
+                        <div class="content">
+                            <h5 class="">DEFAULT</h5>
+                            <p class=""><span>&#8377</span>100.00</p>
+                            <button class="btn btn-dark mt-1 w-100">BUY</button>
+                        </div>
+                    </div>
+
+                    <div class="product-card w-100">
+                        <img src="./assets/img/men/Men Product (5).avif" alt="Product 2">
+                        <div class="content">
+                            <h5 class="">DEFAULT</h5>
+                            <p class=""><span>&#8377</span>100.00</p>
+                            <button class="btn btn-dark mt-1 w-100">BUY</button>
+                        </div>
+                    </div>
+                    <div class="product-card w-100">
+                        <img src="./assets/img/men/Men Product (6).avif" alt="Product 2">
+                        <div class="content">
+                            <h5 class="">DEFAULT</h5>
+                            <p class=""><span>&#8377</span>100.00</p>
+                            <button class="btn btn-dark mt-1 w-100">BUY</button>
+                        </div>
+                    </div>
+                    <div class="product-card w-100">
+                        <img src="./assets/img/men/Men Product (6).avif" alt="Product 2">
+                        <div class="content">
+                            <h5 class="">DEFAULT</h5>
+                            <p class=""><span>&#8377</span>100.00</p>
+                            <button class="btn btn-dark mt-1 w-100">BUY</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg">
+                <div class="product-container grid-view" id="product-container3">
+                    <div class="product-card w-100">
+                        <img src="./assets/img/men/Men Product (7).avif" alt="Product 1">
+                        <div class="content">
+                            <h5 class="">DEFAULT</h5>
+                            <p class=""><span>&#8377</span>100.00</p>
+                            <button class="btn btn-dark mt-1 w-100">BUY</button>
+                        </div>
+                    </div>
+
+                    <div class="product-card w-100">
+                        <img src="./assets/img/men/Men Product (8).avif" alt="Product 2">
+                        <div class="content">
+                            <h5 class="">DEFAULT</h5>
+                            <p class=""><span>&#8377</span>100.00</p>
+                            <button class="btn btn-dark mt-1 w-100">BUY</button>
+                        </div>
+                    </div>
+                    <div class="product-card w-100">
+                        <img src="./assets/img/men/Men Product (9).avif" alt="Product 2">
+                        <div class="content">
+                            <h5 class="">DEFAULT</h5>
+                            <p class=""><span>&#8377</span>100.00</p>
+                            <button class="btn btn-dark mt-1 w-100">BUY</button>
+                        </div>
+                    </div>
+                    <div class="product-card w-100">
+                        <img src="./assets/img/men/Men Product (10).avif" alt="Product 2">
+                        <div class="content">
+                            <h5 class="">DEFAULT</h5>
+                            <p class=""><span>&#8377</span>100.00</p>
+                            <button class="btn btn-dark mt-1 w-100">BUY</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg">
+                <div class="product-container grid-view" id="product-container4">
+                    <div class="product-card w-100">
+                        <img src="./assets/img/men/Men Product (11).avif" alt="Product 1">
+                        <div class="content">
+                            <h5 class="">DEFAULT</h5>
+                            <p class=""><span>&#8377</span>100.00</p>
+                            <button class="btn btn-dark mt-1 w-100">BUY</button>
+                        </div>
+                    </div>
+
+                    <div class="product-card w-100">
+                        <img src="./assets/img/men/Men Product (12).avif" alt="Product 2">
+                        <div class="content">
+                            <h5 class="">DEFAULT</h5>
+                            <p class=""><span>&#8377</span>100.00</p>
+                            <button class="btn btn-dark mt-1 w-100">BUY</button>
+                        </div>
+                    </div>
+                    <div class="product-card w-100">
+                        <img src="./assets/img/men/Men Product (13).avif" alt="Product 2">
+                        <div class="content">
+                            <h5 class="">DEFAULT</h5>
+                            <p class=""><span>&#8377</span>100.00</p>
+                            <button class="btn btn-dark mt-1 w-100">BUY</button>
+                        </div>
+                    </div>
+                    <div class="product-card w-100 ">
+                        <img src="./assets/img/men/Men Product (14).avif" alt="Product 2">
+                        <div class="content">
+                            <h5 class="">DEFAULT</h5>
+                            <p class=""><span>&#8377</span>100.00</p>
+                            <button class="btn btn-dark mt-1 w-100">BUY</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
 
-  <button class="btn2"><span><h1 class="num mb-3">
-   <a href="./index.html"> <img src="./card-products/left-arrow.png" alt="" class="left"></a> 01 <img src="./card-products/line.png" alt="" class="line">02  ......<img src="./card-products/line.png" alt="" class="line">03 <a href="./women1.html"><img src="./card-products/right-arrow.png" alt="" class="right"> </a></h1></span></button>
-    <!-- Footer -->
-    <footer>
 
-      <div class="container">
-          <div class="d-flex flex-wrap justify-content-center mt-5">
-              <div class="col-lg-4 p-3 ">
-                  <h1> Contact Information </h1>
-                  <p>New Town Western King Street, 5th Avenue, New York</p>
-                  <p>Phone No: <a href="tel:+919500000000" class="theme text-decoration-none">9500000000</a> </p>
-                  <p>Email Address:<a href="mailto:abcdef@gmail.com" class="theme text-decoration-none">abcdef@gmail.com</a>
-                  </p>
-              </div>
-              <div class="col-lg-4 p-3">
-                  <h1>Silvertex</h1>
-                  <p>Semper libero, sit amet blandit vel, rh oncus venenatis luctus pulvinar, hend rerit id, lorem.
-                  </p>
-                  <div class="d-flex justify-content-center align-items-center gap-2">
-                      <i class="p-3  footer_icons rounded-circle border  fa-brands fa-whatsapp theme"></i></p>
-                      <i class="p-3  footer_icons rounded-circle border fa-solid fa-envelope theme"></i></p>
-                      <i class="p-3  footer_icons rounded-circle border fa-solid fa-envelope theme"></i></p>
-                  </div>
-              </div>
-              <div class="col-lg-4 p-3 ">
-                  <h1 class="text-start">Usefull Links</h1>
-                  <p>Semper libero, sit amet blandit vel, rh oncus venenatis luctus pulvinar, hend rerit id, lorem.
-                  </p>
-                  <p>Our process</p>
-                  <p>Payment</p>
-                  <p>Special Offers</p>
 
-              </div>
-          </div>
-        </div>
-</footer>
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    <script src="script.js"></script>
-    <script>
-      AOS.init();
-    </script>
-  </body>
+            <!-- Footer -->
+            <div class="container mt-5">
+                <footer class="py-5 px-1">
+                    <div class="row">
+                        <div class="col-6 col-md-2 mb-3">
+                            <h5>Section</h5>
+                            <ul class="nav flex-column">
+                                <li class="nav-item mb-2"><a href="#" class="text-decoration-none p-0 theme">Home</a>
+                                </li>
+                                <li class="nav-item mb-2"><a href="#"
+                                        class="text-decoration-none p-0 theme">Features</a></li>
+                                <li class="nav-item mb-2"><a href="#" class="text-decoration-none p-0 theme">Pricing</a>
+                                </li>
+                                <li class="nav-item mb-2"><a href="#" class="text-decoration-none p-0 theme">FAQs</a>
+                                </li>
+                                <li class="nav-item mb-2"><a href="#" class="text-decoration-none p-0 theme">About</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="col-6 col-md-2 mb-3">
+                            <h5>Section</h5>
+                            <ul class="nav flex-column">
+                                <li class="nav-item mb-2"><a href="#" class="text-decoration-none
+text-decoration-none
+text-decoration-none
+text-decoration-none
+text-decoration-none p-0 theme">Home</a></li>
+                                <li class="nav-item mb-2"><a href="#" class="text-decoration-none
+text-decoration-none
+text-decoration-none
+text-decoration-none
+text-decoration-none p-0 theme">Features</a></li>
+                                <li class="nav-item mb-2"><a href="#" class="text-decoration-none
+text-decoration-none
+text-decoration-none
+text-decoration-none
+text-decoration-none p-0 theme">Pricing</a></li>
+                                <li class="nav-item mb-2"><a href="#" class="text-decoration-none
+text-decoration-none
+text-decoration-none
+text-decoration-none
+text-decoration-none p-0 theme">FAQs</a></li>
+                                <li class="nav-item mb-2"><a href="#" class="text-decoration-none
+text-decoration-none
+text-decoration-none
+text-decoration-none
+text-decoration-none p-0 theme">About</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="col-6 col-md-2 mb-3">
+                            <h5>Section</h5>
+                            <ul class="nav flex-column">
+                                <li class="nav-item mb-2"><a href="#" class="text-decoration-none
+text-decoration-none
+text-decoration-none
+text-decoration-none
+text-decoration-none p-0 theme">Home</a></li>
+                                <li class="nav-item mb-2"><a href="#" class="text-decoration-none
+text-decoration-none
+text-decoration-none
+text-decoration-none
+text-decoration-none p-0 theme">Features</a></li>
+                                <li class="nav-item mb-2"><a href="#" class="text-decoration-none
+text-decoration-none
+text-decoration-none
+text-decoration-none
+text-decoration-none p-0 theme">Pricing</a></li>
+                                <li class="nav-item mb-2"><a href="#" class="text-decoration-none
+text-decoration-none
+text-decoration-none
+text-decoration-none
+text-decoration-none p-0 theme">FAQs</a></li>
+                                <li class="nav-item mb-2"><a href="#" class="text-decoration-none
+text-decoration-none
+text-decoration-none
+text-decoration-none
+text-decoration-none p-0 theme">About</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="col-md-5 offset-md-1 mb-3">
+                            <form>
+                                <h5>Subscribe to our newsletter</h5>
+                                <p>Monthly digest of what's new and exciting from us.</p>
+                                <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                                    <label for="newsletter1" class="visually-hidden">Email address</label>
+                                    <input id="newsletter1" type="text" class="form-control"
+                                        placeholder="Email address">
+                                    <button class="btn btn-dark" type="button">Subscribe</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+                        <p>© 2024 Company, Inc. All rights reserved.</p>
+                        <ul class="list-unstyled d-flex">
+                            <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24"
+                                        height="24">
+                                        <use xlink:href="#twitter"></use>
+                                    </svg></a></li>
+                            <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24"
+                                        height="24">
+                                        <use xlink:href="#instagram"></use>
+                                    </svg></a></li>
+                            <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24"
+                                        height="24">
+                                        <use xlink:href="#facebook"></use>
+                                    </svg></a></li>
+                        </ul>
+                    </div>
+                </footer>
+            </div>
+<!-- end  -->
+
+
+
+
+
+
+            <!-- Bootstrap Script Tag -->
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+                integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+                crossorigin="anonymous"></script>
+            <script>
+                const gridViewBtn = document.getElementById('grid-view-btn');
+                const listViewBtn = document.getElementById('list-view-btn');
+                const productContainer = document.getElementById('product-container');
+                const productcont2 = document.getElementById("product-container2");
+                const productcont3 = document.getElementById("product-container3");
+                const productcont4 = document.getElementById("product-container4");
+
+                gridViewBtn.addEventListener('click', () => {
+                    productContainer.classList.remove('list-view');
+                    productcont2.classList.remove('list-view');
+                    productcont3.classList.remove('list-view');
+                    productcont4.classList.remove('list-view');
+                    productContainer.classList.add('grid-view');
+                    productcont2.classList.add('grid-view');
+                    productcont3.classList.add('grid-view');
+                    productcont4.classList.add('grid-view');
+                });
+
+                listViewBtn.addEventListener('click', () => {
+                    productContainer.classList.remove('grid-view');
+                    productcont2.classList.remove('grid-view');
+                    productcont3.classList.remove('grid-view');
+                    productcont4.classList.remove('grid-view');
+                    productContainer.classList.add('list-view');
+                    productcont2.classList.add('list-view');
+                    productcont3.classList.add('list-view');
+                    productcont4.classList.add('list-view');
+                });
+
+
+            </script>
+
+            <script src="./assets/js/script.js"></script>
+
+</body>
+
 </html>
